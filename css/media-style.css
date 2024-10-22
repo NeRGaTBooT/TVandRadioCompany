@@ -1,0 +1,116 @@
+/* Стили для мобильной версии */
+@media (max-width: 1140px) {
+    .nav_main {
+        display: none; /* Скрыть навигацию по умолчанию */
+        width: 100%;
+        background-color: #282828; /* Цвет фона меню */
+        position: absolute;
+        top: 89px; /* Позиция меню под хедером */
+        left: 0;
+        z-index: 10;
+        transform: translateX(-1000px); /* Начальное смещение */
+        transition: opacity 0.3s ease, transform 0.3s ease; /* Плавный переход */
+    }
+
+    .nav_main ul{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .nav_main ul li a{
+        color: #fff;
+    }
+
+    .nav_main.active {
+        display: block; /* Показать меню при активации */
+        opacity: 1; /* Полная непрозрачность */
+        transform: translateX(0); /* Возвращаем в исходное положение */
+    }
+
+    .burger {
+        display: flex; /* Показать бургер-меню на мобильных устройствах */
+    }
+
+    .nav-list {
+        flex-direction: column; /* Вертикальное расположение пунктов меню */
+        padding: 10px 0; /* Отступы */
+    }
+
+    .nav-list li {
+        text-align: center; /* Центрирование текста */
+        padding: 10px 0; /* Отступы для пунктов меню */
+    }
+}
+
+@media (max-width: 768px){
+    .section_block_news-wrapper{
+        flex-direction: column;
+    }
+
+    .section_current_slider {
+        margin: 0 -10px; /* Установка отрицательных отступов по краям слайдов */
+    }
+    .section_current_slider div {
+        padding: 0 10px; /* Добавление внутренних отступов между слайдами */
+    }
+    .current_slider_link{
+        font-size: 25px;
+    }
+    .main_block{
+        flex-direction: column-reverse;
+    }
+
+    .video-container iframe{
+        position: static;
+    }
+
+    .video-container{
+        position: static;
+        padding: 0;
+        height: 300px;
+        width: 100%;
+    }
+
+    .main_block_video{
+        width: 100%;     
+    }
+
+    .news_item{
+        flex-direction: column;
+    }
+
+    .news_item-body-desc{
+        margin-bottom: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    table td, table th {
+        padding: 4px;
+    }
+}
+
+@media (max-width: 425px){
+
+    .video-container{
+        height: 150px;
+    }
+
+    .tab_vak_form .tab1_title{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 320px){
+
+    .tab1_vak_link{
+        font-size: 11px;
+    }
+
+    .form_input_block input, .form_input_block select{
+        padding: 0 11px;
+    }
+}
+
+

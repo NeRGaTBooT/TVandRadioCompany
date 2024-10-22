@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости Гомель</title>
+    <!-- Подключение сброса стандартных стилей браузера -->
+    <link rel="stylesheet" href="css/reset.css"> 
+    <!-- Подключение стилей для работы Slick Slider (библиотека слайдеров) -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <!-- Подключение основным стилей для сайта -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Подключение стилей Media-запросов(для отображения на разных экранах) -->
+    <link rel="stylesheet" href="css/media-style.css">
+    <!-- Скрипты для работы Slick Slider -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <!-- Модальное окно -->
+        <div id="modal_news" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 class="section_title">Прислать новость</h2>
+                <p class="title_desc">Хотите поделиться эксклюзивной новостью, интересными фото или видео?</p>
+                <div class="form_modal_wrap">
+                    <form action="#">
+                        <div class="form_input_block">
+                            <input type="text" placeholder="Фимилия *" required>
+                            <input type="text" placeholder="Имя *" required>
+                            <input type="text" placeholder="Отчество *" required>
+                            <input type="text" placeholder="Населенный пункт *" required>
+                            <input type="tel" name="" id="" placeholder="Номер телефона *" required>
+                            <input type="email" name="" id="" placeholder="Email *" required>
+                        </div>
+                        <div class="input_wrap">
+                            <label for="text_area_form">Какой новостью вы хотите с нами поделиться? *</label>
+                            <textarea name="text_area_form" id="text_area_form" rows="5"></textarea>
+                        </div>
+                        <div class="input_wrap">
+                            <label for="input_file">Резюме *</label>
+                            <input type="file" name="input_file" id="input_file" required>
+                        </div>
+                        <div class="input_chek">
+                            <input type="checkbox" name="check" id="check">
+                            <label for="check">Я принимаю условия пользовательского соглашения</label>
+                        </div>
+                        <input class="form_btn" type="submit" value="Отправить">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Шапка сайта -->
+        <header class="header">
+            <div class="container">
+                <div class="header_box">
+                    <div class="logo"><a href="index.html"><img src="img/Logo.png" alt="logo"> Теле-радио компания <br>"Гомель"</a></div>
+                    <div class="nav_main">
+                        <ul>
+                            <li><a href="index.html">Новости</a></li>
+                            <li><a href="ad.html">Реклама</a></li>
+                            <li><a href="radio.html">Радио</a></li>
+                            <li><a href="about.html">О компании</a></li>
+                            <li><a href="#" id="openModal">Прислать новость</a></li>
+                        </ul>
+                    </div>
+                    <div class="burger" id="burger">
+                        <img src="img/ico/menu.svg" alt="menu" class="burger-icon" id="burger-icon" >
+                    </div>
+                </div>
+            </div>            
+        </header>
+
+        <!-- Секция бегущая строка -->
+        <section class="section_marquee">
+            <div class="container">
+                <div class="marquee">
+                    <div>
+                        <a href="news_block.html">Привалов встретился с трудовым коллективом «Белоруснефти»</a> 
+                        <a href="news_block.html">Молчание = европейская дипломатия. В Речице состоялось судебное заседание по делу активистки радикально-экстремистского и националистического толка Полины Шарендо-Панасюк</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_tabs">
+            <div class="container">
+                <div class="tabs-container">
+                    <div class="tabs">
+                        <button class="tab-button active" data-tab="tab1">О компании</button>
+                        <button class="tab-button" data-tab="tab2">О телевидении</button>
+                        <button class="tab-button" data-tab="tab3">О радио</button>
+                        <button class="tab-button" data-tab="tab4">Контакты</button>
+                        <button class="tab-button" data-tab="tab5">Вакансии</button>
+                    </div>
+                    <div class="tab-content">
+                        <div class="content active" id="tab1">
+                            <div class="tab_item">
+                                <h2 class="tab1_title">О нас</h2>
+                                <p class="tab_text">Телерадиокомпания «Гомель» — одно из старейших медиа региона. Радио начало вещать в 1926 году, а после войны в 1950 году появился и телевизионный центр. </p>
+                                <p class="tab_text_b"><b>1950 год</b></p>
+                                <p class="tab_text">Создание в Гомеле любительского телецентра, который располагался в ДК «Железнодорожников». Вначале центр принимал программы из Киева, поскольку в 50-х годах прошлого века прием сигнала из Минска технически был невозможен.</p>
+                            </div>
+                            <div class="tab_item">
+                                <p class="tab_text_b"><b>6 ноября 1956-го</b></p>
+                                <p class="tab_text">Релиз первой авторской программы любительского телецентра. Под руководством Евгения Керножицкого работали энтузиасты, которые вскоре стали штатными сотрудниками уже профессионального гомельского телевидения.</p>
+                            </div>
+                            <div class="tab_item">
+                                <p class="tab_text_b"><b>31 декабря 1957 года</b></p>
+                                <p class="tab_text">Вышла в эфир новогодняя передача любительского телецентра. С этого момента и ведет свое официальное летоисчисление гомельская телерадиокомпания. В то время, когда видеозаписи еще не было, все шло в прямом эфире. Все передачи по нескольку раз прогонялись и репетировались, чтобы не случилось какой-то заминки. Однако и с появлением видеозаписи возможности монтажа были крайне ограничены, так что из-за малейшей оговорки все приходилось снимать заново.</p>
+                            </div>
+                            <div class="tab_item">
+                                <p class="tab_text_b"><b>1960-1970 гг.</b></p>
+                                <p class="tab_text">Регулярно выходят выпуски новостей. Наряду с ними — передачи разной тематики: от социально-политической до музыкальной. Особой популярностью пользовалась молодежная редакция. Она уверенно соперничала с региональными студиями не только тогдашней Беларуси, но и других союзных республик. Редактор Виктория Колчунова в прямом эфире просто чудеса: на ста студийных метрах работали сразу нескольких площадок. Также зрители любили программу «Деркач» в формате сатирического журнала. Программу делала литературно-драматическая редакция. «Деркач» выходил в эфир с середины 60-ых на протяжении почти 20 лет. Тексты к нему писал Константин Калинов. В 70-е на телевидении создали новую центральную аппаратную, усовершенствовали вышку и цех кинопроизводства, начали использовать первые видеомагнитофоны.</p>
+                            </div>
+                            <div class="tab_item">
+                                <p class="tab_text_b"><b>1980-1990 гг.</b></p>
+                                <p class="tab_text">Значительное место на экране в этот период уделяют передачам социально-политической и сельскохозяйственной редакции, детской и музыкальной. Дальнейшее совершенствование телевидения стало немыслимым без перехода на цвет. В январе 1981 г. в стационарных условиях задействовали передвижное телевизионное оборудование «Лотос». На тот момент только у 15% населения были цветные телевизоры.</p>
+                            </div>
+                            <div class="tab_item">
+                                <p class="tab_text_b"><b>2000 год</b></p>
+                                <p class="tab_text">Телерадиокомпания «Гомель» открыла вторую современную студию.</p>
+                            </div>
+                            <div class="tab_item">
+                                <p class="tab_text_b"><b>25 сентября 2015 года</b></p>
+                                <p class="tab_text">В Гомеле начал вещание телеканал «Беларусь 4». Его платформа базируется на унифицированной сетке вещания для всех областей страны под единым брендом. Эфир телеканала занимает 18,5 часов. Зрителям предлагают самые разные проекты: информационные и аналитические, образовательные и развлекательные. Социально-экономическая, культурная, криминальная, спортивная тематика в информационных выпусках и репортажах, ток-шоу и викторинах, прямых телевизионных трансляциях и студийных передачах.</p>
+                            </div>
+                            <div class="tab_item">
+                                <p class="tab_text_b"><b>27 декабря 2018 года</b></p>
+                                <p class="tab_text">Телерадиокомпания «Гомель» запустила вещание в кабельных сетях в формате HD.</p>
+                            </div>
+                            <div class="tab_item">
+                                <p class="tab_text_b"><b>2022 год</b></p>
+                                <p class="tab_text">Телерадиокомпания «Гомель» значительно увеличила объем информационного вещания. Сейчас «Новости» Гомельского региона выходят в эфир практически ежечасно. Идёт активное развитие digital-каналов: YouTube, Telegram и других социальных сетей областного телевидения.</p>
+                            </div>
+                        </div>
+                        <div class="content" id="tab2">
+                            <div class="tab_item_2">
+                                <h2 class="tab1_title">О телевидении</h2>
+                                <p class="tab_text">Беларусь 4 — флагманский телеканал Гомеля и региона: информационный, общественно-политический и познавательно-развлекательный. Здесь можно узнать новости не только областного центра, но и всего края, а также услышать мнения его жителей и экспертов по теме дня. Наши корреспонденты всегда находятся в поисках интересных сюжетов и детально разбираются в вопросах, касающихся всего региона, страны. Кроме того, «Беларусь 4» участвует в диалоге с местной властью: вопросы представителям администраций, гор- и облисполкомов можно задать в прямом эфире. В телевизионной сетке кроме авторского контента, есть фильмы и телешоу.</p>
+                                <p class="tab_text">Платформа телеканала «Беларусь 4» базируется на унифицированной сетке вещания для всех областей страны под единым брендом. Эфир телеканала занимает 18,5 часов. Зрителям предлагают самые разные проекты: информационные и аналитические, образовательные и развлекательные. Социально-экономическая, культурная, криминальная, спортивная тематика в информационных выпусках и репортажах, ток-шоу и викторинах, прямых телевизионных трансляциях и студийных передачах.</p>
+                            </div>
+                            <div class="tab_item_2">
+                                <p class="tab_text_b"><b>Наши программы:</b></p>
+                                <p class="tab_text">Новости</p>
+                                <p class="tab_text">Точка зрения</p>
+                                <p class="tab_text">Добрый вечер, Гомель</p>
+                                <p class="tab_text">С утра пораньше</p>
+                                <p class="tab_text">Де-факто</p>
+                                <p class="tab_text">Классный час</p>
+                                <p class="tab_text">Эрудит</p>
+                                <p class="tab_text">Большая стройка</p>
+                                <p class="tab_text">Земля наша</p>
+                                <p class="tab_text">Человек года</p>
+                                <p class="tab_text">Я ищу маму</p>
+                            </div>
+                        </div>
+                        <div class="content" id="tab3">
+                            <div class="tab_item_1">
+                                <h2 class="tab1_title">О радио</h2>
+                                <p class="tab_text">Сегодня компания представлена двумя радиостанциями «Гомель ФМ» и «Гомель Плюс», а также каналом «Беларусь 4». Кроме того, авторский контент, который создает команда профессионалов, востребован онлайн. В 2018 году мы перешли на HD-формат вещания, что также добавило баллов к общему рейтингу компании.</p>
+                            </div>
+                            <div class="tab_item">
+                                <p class="tab_text_b"><b>15 ноября 1925 года</b></p>
+                                <p class="tab_text">В этот день в эфире впервые прозвучали слова: «Увага! Гаворыць Мiнск!».</p>
+                            </div>
+                            <div class="tab_item">
+                                <p class="tab_text_b"><b>14 марта 1926 года</b></p>
+                                <p class="tab_text">В Гомеле по улице Билецкого, 25 начала работу радиостанция им. И. В. Сталина. Мощность передатчика составляла 1.2 кВт. Радиус покрытия — 300 км. Радиостанция ретранслировала передачи из Москвы, из Киева и работала до 1927 года.</p>
+                            </div>
+                            <div class="tab_item">
+                                <p class="tab_text_b"><b>24 июля 1927 год</b></p>
+                                <p class="tab_text">В Гомеле начала работу первая радиотрансляционная сеть. Радиоточки для общего прослушивания установили в городском парке, на центральной площади, в некоторых жилых домах по ул. Пушкина.</p>
+                            </div>
+                            <div class="tab_item">
+                                <p class="tab_text_b"><b>1931 год</b></p>
+                                <p class="tab_text">Гомельская радиотрансляционная сеть насчитывала более 2000 радиоточек. Во всех районных центрах области оборудованы проволочные вещательные узлы, которые имели в сумме до 8000 радиоточек.</p>
+                            </div>
+                            <div class="tab_item">
+                                <p class="tab_text_b"><b>1941 год</b></p>
+                                <p class="tab_text">В начале Великой Отечественной войны работники Гомельского радиоузла покинули город с последними подразделениями, оборонявшими областной центр. Усилитель демонтировали. Силовой трансформатор и основные детали закопали в землю.</p>
+                            </div>
+                            <div class="tab_item">
+                                <p class="tab_text_b"><b>1943 год</b></p>
+                                <p class="tab_text">В декабре, после освобождения областного центра от немецко-фашистских захватчиков, в Гомеле возобновились радиопередачи. Двигатель с электрогенератором, электролампы, электродетали для работы радио выделил командующий 3-им Белорусским фронтом К. К. Рокоссовский.</p>
+                            </div>
+                            <div class="tab_item">
+                                <p class="tab_text_b"><b>1948 год</b></p>
+                                <p class="tab_text">В Гомельской области достигнута довоенная мощность радиоузлов. Работают 44 радиоузла всех ведомств. Кроме последних известий, каждую неделю ведется цикл тематических радиопередач для работников промышленности, железнодорожного и водного транспорта, сельского хозяйства, животноводов, передачи для молодежи.</p>
+                            </div>
+                            <div class="tab_item">
+                                <p class="tab_text_b"><b>1951 год</b></p>
+                                <p class="tab_text">Гомельским областным комитетом радиоинформации подготовлено и передано более 400 радиопередач последних известий, выступило 775 человек передовых людей промышленности и сельского хозяйства, руководящих работников. Объем вещания областного радио в программе «Белорусского радио» — 1 час 20 минут в сутки — с 6.40 до 7.00 и с 18.00 до 19.00.</p>
+                            </div>
+                            <div class="tab_item">
+                                <p class="tab_text_b"><b>1999 год</b></p>
+                                <p class="tab_text">Принята Программа реконструкции Гомельского областного телерадиообъединения. Она предусматривает реконструкцию зданий по ул. Пушкина, 6а и Пушкина, 8, материально-техническое оснащение радиостудий, расширение вещания в FM- диапазоне.</p>
+                            </div>
+                            <div class="tab_item">
+                                <p class="tab_text_b"><b>7 июля 2012 год</b></p>
+                                <p class="tab_text">На базе телерадиокомпании «Гомель» на частоте 103.7 начала свое вещание новая радиостанция «Гомель Плюс». Формат радиостанции ориентирован на старшую аудиторию 35+.</p>
+                            </div>
+                        </div>
+                        <div class="content" id="tab4">
+                            <div class="tab_item_1">
+                                <h2 class="tab1_title">Контакты</h2>
+                            </div>
+                            <div class="tab_item_1">
+                                <p class="tab_text_name"><b>Добриян Александр Владимирович</b></p>
+                                <p class="tab_text">Директор</p>
+                                <p class="tab_text">Телефон приемной: <a href="tel:+375 232 342678">+375 232 342678</a></p>
+                                <p class="tab_text">Электронный адрес приёмной: <a href="mailto:sekretar@tvrgomel.by">sekretar@tvrgomel.by</a></p>
+                            </div>
+                            <div class="tab_item_1">
+                                <p class="tab_text_name"><b>Василюк Елена Анатольевна</b></p>
+                                <p class="tab_text">Заместитель директора</p>
+                                <p class="tab_text">Телефон: <a href="tel:+375 232 342690">+375 232 342690</a></p>
+                            </div>
+                            <div class="tab_item_1">
+                                <p class="tab_text_name"><b>Котов Дмитрий Викторович</b></p>
+                                <p class="tab_text">Продюсер исполнительный сектора подготовки информационных программ.</p>
+                                <p class="tab_text">Телефон: <a href="tel:+375 232 342690">+375 232 342690</a></p>
+                            </div>
+                            <div class="tab_item_1">
+                                <p class="tab_text_name"><b>Новик Татьяна Валерьевна</b></p>
+                                <p class="tab_text">Заведующая отделом продаж и маркетинга</p>
+                                <p class="tab_text">Телефон: <a href="tel:+375 232 342690">+375 232 342690</a></p>
+                            </div>
+                        </div>
+                        <div class="content" id="tab5">
+                            <div class="tab_item_1">
+                                <h2 class="tab1_title">Вакансии</h2>
+                            </div>
+                            <div class="tab1_vak_block">
+                                <p class="tab_text_name"><b>Главный редактор радио</b></p>
+                                <p class="tab_vak_text">Обязанности: руководство отделами радио; -административное и творческое управление коллективом радио; -контроль за выходом программ, рекламы, помощь ведущим в создании новых рубрик и разделов; -организация PR-мероприятий, направленных на продвижение радиостанций. Требования: высшее образование; опыт работы от 5 лет на радио или телевидении. Резюме обязательно</p>
+                                <div class="tab1_vak_link">
+                                    <a href="#">Откликнуться</a>
+                                    <a href="#">Посмотреть контакты</a>
+                                </div>
+                            </div>
+                            <div class="tab1_vak_block">
+                                <p class="tab_text_name"><b>Главный редактор радио</b></p>
+                                <p class="tab_vak_text">Обязанности: руководство отделами радио; -административное и творческое управление коллективом радио; -контроль за выходом программ, рекламы, помощь ведущим в создании новых рубрик и разделов; -организация PR-мероприятий, направленных на продвижение радиостанций. Требования: высшее образование; опыт работы от 5 лет на радио или телевидении. Резюме обязательно</p>
+                                <div class="tab1_vak_link">
+                                    <a href="#">Откликнуться</a>
+                                    <a href="#">Посмотреть контакты</a>
+                                </div>
+                            </div>
+                            <div class="tab_vak_form">
+                                <h2 class="tab1_title">Прислать резюме</h2>
+                                <form action="#">
+                                    <div class="form_input_block">
+                                        <input type="text" placeholder="Фимилия *" required>
+                                        <input type="text" placeholder="Имя *" required>
+                                        <input type="text" placeholder="Отчество *" required>
+                                        <select name="" id="" placeholder="Выберите вакансию" >
+                                            <option value="">Выберите вакансию</option>
+                                            <option value="Главный редактор радио">Главный редактор радио</option>
+                                            <option value="Редактор">Редактор</option>
+                                            <option value="Предложить вакансию">Предложить вакансию</option>
+                                        </select> 
+                                        <input type="tel" name="" id="" placeholder="Номер телефона *" required>
+                                        <input type="email" name="" id="" placeholder="Email *" required>
+                                    </div>
+                                    <div class="input_wrap">
+                                        <label for="text_area_form">Сопроводительное письмо</label>
+                                        <textarea name="text_area_form" id="text_area_form" rows="5"></textarea>
+                                    </div>
+                                    <div class="input_wrap">
+                                        <label for="input_file">Резюме *</label>
+                                        <input type="file" name="input_file" id="input_file" required>
+                                    </div>
+                                    <div class="input_chek">
+                                        <input type="checkbox" name="check" id="check">
+                                        <label for="check">Я принимаю условия пользовательского соглашения</label>
+                                    </div>
+                                    <input class="form_btn" type="submit" value="Отправить">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Секция Социальные сети -->
+        <section class="section_social">
+            <div class="container">
+                <div class="section_social-title">Подписаться</div>
+                <div class="section_social_wrapper">
+                    <a class="social_link_vk" href="#"><img src="img/ico_social/brand-vk.svg" alt="vk"></a>
+                    <a class="social_link_youtube" href="#"><img src="img/ico_social/brand-youtube.svg" alt="youtube"></a>
+                    <a class="social_link_telegram" href="#"><img src="img/ico_social/brand-telegram.svg" alt="telegram"></a>
+                    <a class="social_link_facebook" href="#"><img src="img/ico_social/brand-facebook.svg" alt="facebook"></a>
+                    <a class="social_link_instagram" href="#"><img src="img/ico_social/brand-instagram.svg" alt="instagram"></a>
+                    <a class="social_link_tiktok" href="#"><img src="img/ico_social/brand-tiktok.svg" alt="tiktok"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция Подвал -->
+        <footer class="footer">
+            <div class="container">
+                <div class="nav_main_footer">
+                    <ul>
+                        <li><a href="index.html">Новости</a></li>
+                        <li><a href="ad.html">Реклама</a></li>
+                        <li><a href="radio.html">Радио</a></li>
+                        <li><a href="about.html">О компании</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="js/main.js"></script>
+    <script src="js/slick_init.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+</body>
+</html>

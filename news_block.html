@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости Гомель</title>
+    <!-- Подключение сброса стандартных стилей браузера -->
+    <link rel="stylesheet" href="css/reset.css"> 
+    <!-- Подключение стилей для работы Slick Slider (библиотека слайдеров) -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <!-- Подключение основным стилей для сайта -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Подключение стилей Media-запросов(для отображения на разных экранах) -->
+    <link rel="stylesheet" href="css/media-style.css">
+    <!-- Скрипты для работы Slick Slider -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <!-- Модальное окно -->
+        <div id="modal_news" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 class="section_title">Прислать новость</h2>
+                <p class="title_desc">Хотите поделиться эксклюзивной новостью, интересными фото или видео?</p>
+                <div class="form_modal_wrap">
+                    <form action="#">
+                        <div class="form_input_block">
+                            <input type="text" placeholder="Фимилия *" required>
+                            <input type="text" placeholder="Имя *" required>
+                            <input type="text" placeholder="Отчество *" required>
+                            <input type="text" placeholder="Населенный пункт *" required>
+                            <input type="tel" name="" id="" placeholder="Номер телефона *" required>
+                            <input type="email" name="" id="" placeholder="Email *" required>
+                        </div>
+                        <div class="input_wrap">
+                            <label for="text_area_form">Какой новостью вы хотите с нами поделиться? *</label>
+                            <textarea name="text_area_form" id="text_area_form" rows="5"></textarea>
+                        </div>
+                        <div class="input_wrap">
+                            <label for="input_file">Резюме *</label>
+                            <input type="file" name="input_file" id="input_file" required>
+                        </div>
+                        <div class="input_chek">
+                            <input type="checkbox" name="check" id="check">
+                            <label for="check">Я принимаю условия пользовательского соглашения</label>
+                        </div>
+                        <input class="form_btn" type="submit" value="Отправить">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Шапка сайта -->
+        <header class="header">
+            <div class="container">
+                <div class="header_box">
+                    <div class="logo"><a href="index.html"><img src="img/Logo.png" alt="logo"> Теле-радио компания <br>"Гомель"</a></div>
+                    <div class="nav_main">
+                        <ul>
+                            <li><a href="index.html">Новости</a></li>
+                            <li><a href="ad.html">Реклама</a></li>
+                            <li><a href="radio.html">Радио</a></li>
+                            <li><a href="about.html">О компании</a></li>
+                            <li><a href="#" id="openModal">Прислать новость</a></li>
+                        </ul>
+                    </div>
+                    <div class="burger" id="burger">
+                        <img src="img/ico/menu.svg" alt="menu" class="burger-icon" id="burger-icon" >
+                    </div>
+                </div>
+            </div>            
+        </header>
+
+        <!-- Секция бегущая строка -->
+        <section class="section_marquee">
+            <div class="container">
+                <div class="marquee">
+                    <div>
+                        <a href="news_block.html">Привалов встретился с трудовым коллективом «Белоруснефти»</a> 
+                        <a href="news_block.html">Молчание = европейская дипломатия. В Речице состоялось судебное заседание по делу активистки радикально-экстремистского и националистического толка Полины Шарендо-Панасюк</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_news">
+            <div class="container">
+                <h2 class="section_title">Последние новости</h2>
+                <div class="news_wrapper">
+                    <div class="news_item">
+                        <div class="news_item-img"><img src="img/news_block/news_block_1.jpg" alt=""></div>
+                        <div class="news_item-body">
+                            <div class="news_item-body-wrap">
+                                <div class="news_item-body-title">Исследование: Влияние сна на продуктивность</div>
+                                <div class="news_item-body-desc">Недавнее исследование показало, что качество сна имеет огромное значение для нашей продуктивности и общего благополучия. Ученые обнаружили, что недостаток сна может существенно снижать концентрацию и работоспособность в течение дня. Узнайте, какие рекомендации дают специалисты для улучшения качества сна и повышения производительности.</div>
+                            </div>
+                            <a href="#" class="news_item-link">Перейти</a>
+                        </div>
+                    </div>
+                    <div class="news_item">
+                        <div class="news_item-img"><img src="img/news_block/news_block_2.jpg" alt=""></div>
+                        <div class="news_item-body">
+                            <div class="news_item-body-wrap">
+                                <div class="news_item-body-title">Новый рекорд: SpaceX запустила 100 спутников за один запуск</div>
+                                <div class="news_item-body-desc">Впечатляющее достижение космической компании SpaceX! Компания успешно запустила целых 100 спутников за один запуск ракеты. Этот рекордный запуск открывает новую эру в коммерческом космосе. Подробности и видео этого исторического события доступны по ссылке ниже.</div>
+                            </div>
+                            <a href="#" class="news_item-link">Перейти</a>
+                        </div>
+                    </div>
+                    <div class="news_item">
+                        <div class="news_item-img"><img src="img/news_block/news_block_3.jpg" alt=""></div>
+                        <div class="news_item-body">
+                            <div class="news_item-body-wrap">
+                                <div class="news_item-body-title">Искусственный интеллект в медицине: революция или опасность?</div>
+                                <div class="news_item-body-desc">Дискуссия о влиянии искусственного интеллекта на медицину набирает обороты. Как машины могут помочь в диагностике и лечении, и насколько это безопасно? В новом материале мы рассмотрим преимущества и риски использования ИИ в здравоохранении и поделимся мнениями экспертов.</div>
+                            </div>
+                            <a href="#" class="news_item-link">Перейти</a>
+                        </div>
+                    </div>
+                    <div class="news_item">
+                        <div class="news_item-img"><img src="img/news_block/news_block_4.jpg" alt=""></div>
+                        <div class="news_item-body">
+                            <div class="news_item-body-wrap">
+                                <div class="news_item-body-title">Культурное событие: выставка современного искусства открылась в центре города</div>
+                                <div class="news_item-body-desc">Не упустите возможность окунуться в мир современного искусства! В центре города открылась уникальная выставка, объединяющая произведения талантливых художников со всего мира. Узнайте о творческих концепциях, которые легли в основу выставки, и откройте для себя новые художественные горизонты.</div>
+                            </div>
+                            <a href="#" class="news_item-link">Перейти</a>
+                        </div>
+                    </div>
+                    <div class="news_item">
+                        <div class="news_item-img"><img src="img/news_block/news_block_5.jpg" alt=""></div>
+                        <div class="news_item-body">
+                            <div class="news_item-body-wrap">
+                                <div class="news_item-body-title">Кулинарный мастер-класс: учимся готовить роллы в домашних условиях</div>
+                                <div class="news_item-body-desc">Хотите научиться готовить вкусные и оригинальные роллы прямо у себя дома? Присоединяйтесь к нашему кулинарному мастер-классу, где опытный шеф-повар поделится с вами секретами приготовления лучших рецептов. Регистрация открыта!</div>
+                            </div>
+                            <a href="#" class="news_item-link">Перейти</a>
+                        </div>
+                    </div>
+                    <div class="news_item">
+                        <div class="news_item-img"><img src="img/news_block/news_block_6.jpg" alt=""></div>
+                        <div class="news_item-body">
+                            <div class="news_item-body-wrap">
+                                <div class="news_item-body-title">Экологическая инициатива: посадка 1000 деревьев в парке города</div>
+                                <div class="news_item-body-desc">Присоединяйтесь к экологической инициативе по посадке 1000 деревьев в центральном парке города! Это уникальная возможность внести свой вклад в сохранение окружающей среды и создание зеленых зон для будущих поколений. Подробности о мероприятии и как присоединиться доступны по ссылке ниже.</div>
+                            </div>
+                            <a href="#" class="news_item-link">Перейти</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция Социальные сети -->
+        <section class="section_social">
+            <div class="container">
+                <div class="section_social-title">Подписаться</div>
+                <div class="section_social_wrapper">
+                    <a class="social_link_vk" href="#"><img src="img/ico_social/brand-vk.svg" alt="vk"></a>
+                    <a class="social_link_youtube" href="#"><img src="img/ico_social/brand-youtube.svg" alt="youtube"></a>
+                    <a class="social_link_telegram" href="#"><img src="img/ico_social/brand-telegram.svg" alt="telegram"></a>
+                    <a class="social_link_facebook" href="#"><img src="img/ico_social/brand-facebook.svg" alt="facebook"></a>
+                    <a class="social_link_instagram" href="#"><img src="img/ico_social/brand-instagram.svg" alt="instagram"></a>
+                    <a class="social_link_tiktok" href="#"><img src="img/ico_social/brand-tiktok.svg" alt="tiktok"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция Подвал -->
+        <footer class="footer">
+            <div class="container">
+                <div class="nav_main_footer">
+                    <ul>
+                        <li><a href="index.html">Новости</a></li>
+                        <li><a href="ad.html">Реклама</a></li>
+                        <li><a href="radio.html">Радио</a></li>
+                        <li><a href="about.html">О компании</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/slick_init.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости Гомель</title>
+    <!-- Подключение сброса стандартных стилей браузера -->
+    <link rel="stylesheet" href="css/reset.css"> 
+    <!-- Подключение стилей для работы Slick Slider (библиотека слайдеров) -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <!-- Подключение основным стилей для сайта -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Подключение стилей Media-запросов(для отображения на разных экранах) -->
+    <link rel="stylesheet" href="css/media-style.css">
+    <!-- Скрипты для работы Slick Slider -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <!-- Модальное окно -->
+        <div id="modal_news" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 class="section_title">Прислать новость</h2>
+                <p class="title_desc">Хотите поделиться эксклюзивной новостью, интересными фото или видео?</p>
+                <div class="form_modal_wrap">
+                    <form action="#">
+                        <div class="form_input_block">
+                            <input type="text" placeholder="Фимилия *" required>
+                            <input type="text" placeholder="Имя *" required>
+                            <input type="text" placeholder="Отчество *" required>
+                            <input type="text" placeholder="Населенный пункт *" required>
+                            <input type="tel" name="" id="" placeholder="Номер телефона *" required>
+                            <input type="email" name="" id="" placeholder="Email *" required>
+                        </div>
+                        <div class="input_wrap">
+                            <label for="text_area_form">Какой новостью вы хотите с нами поделиться? *</label>
+                            <textarea name="text_area_form" id="text_area_form" rows="5"></textarea>
+                        </div>
+                        <div class="input_wrap">
+                            <label for="input_file">Резюме *</label>
+                            <input type="file" name="input_file" id="input_file" required>
+                        </div>
+                        <div class="input_chek">
+                            <input type="checkbox" name="check" id="check">
+                            <label for="check">Я принимаю условия пользовательского соглашения</label>
+                        </div>
+                        <input class="form_btn" type="submit" value="Отправить">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Шапка сайта -->
+        <header class="header">
+            <div class="container">
+                <div class="header_box">
+                    <div class="logo"><a href="index.html"><img src="img/Logo.png" alt="logo"> Теле-радио компания <br>"Гомель"</a></div>
+                    <div class="nav_main">
+                        <ul>
+                            <li><a href="index.html">Новости</a></li>
+                            <li><a href="ad.html">Реклама</a></li>
+                            <li><a href="radio.html">Радио</a></li>
+                            <li><a href="about.html">О компании</a></li>
+                            <li><a href="#" id="openModal">Прислать новость</a></li>
+                        </ul>
+                    </div>
+                    <div class="burger" id="burger">
+                        <img src="img/ico/menu.svg" alt="menu" class="burger-icon" id="burger-icon" >
+                    </div>
+                </div>
+            </div>            
+        </header>
+
+        <!-- Секция бегущая строка -->
+        <section class="section_marquee">
+            <div class="container">
+                <div class="marquee">
+                    <div>
+                        <a href="news_block.html">Привалов встретился с трудовым коллективом «Белоруснефти»</a> 
+                        <a href="news_block.html">Молчание = европейская дипломатия. В Речице состоялось судебное заседание по делу активистки радикально-экстремистского и националистического толка Полины Шарендо-Панасюк</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_ad">
+            <div class="container">
+                <h2 class="section_title">Реклама</h2>
+                <p class="desc_ad">Производство и размещение рекламы</p>
+                <div class="section_ad_wrap">
+                    <div class="ad_item">
+                        Размещение рекламных видеороликов
+                    </div>
+                    <div class="ad_item">
+                        Размещение информации в “Бегущей строке” 1слово - 2,40 руб.
+                    </div>
+                    <div class="ad_item">
+                        Производство рекламных видеороликов
+                    </div>
+                    <div class="ad_item">
+                        Производство и размещение видеосюжета в программах “Навiны Рэгiёна”, “Ранехонько”
+                    </div>
+                    <div class="ad_item">
+                        Производство презентационных фильмов
+                    </div>
+                    <div class="ad_item">
+                        Производство и размещение коммерческих передач
+                    </div>
+                    <div class="ad_item">
+                        Партнер показа
+                    </div>
+                </div>
+                <h2 class="section_title">Связаться с нами</h2>
+                <div class="section_ad_kontakts">
+                    <div class="tab_item_1">
+                        <p class="tab_text_name"><b>Добриян Александр Владимирович</b></p>
+                        <p class="tab_text">Директор</p>
+                        <p class="tab_text">Телефон приемной: <a href="tel:+375 232 342678">+375 232 342678</a></p>
+                        <p class="tab_text">Электронный адрес приёмной: <a href="mailto:sekretar@tvrgomel.by">sekretar@tvrgomel.by</a></p>
+                    </div>
+                    <div class="tab_item_1">
+                        <p class="tab_text_name"><b>Василюк Елена Анатольевна</b></p>
+                        <p class="tab_text">Заместитель директора</p>
+                        <p class="tab_text">Телефон: <a href="tel:+375 232 342690">+375 232 342690</a></p>
+                    </div>
+                    <div class="tab_item_1">
+                        <p class="tab_text_name"><b>Котов Дмитрий Викторович</b></p>
+                        <p class="tab_text">Продюсер исполнительный сектора подготовки информационных программ.</p>
+                        <p class="tab_text">Телефон: <a href="tel:+375 232 342690">+375 232 342690</a></p>
+                    </div>
+                    <div class="tab_item_1">
+                        <p class="tab_text_name"><b>Новик Татьяна Валерьевна</b></p>
+                        <p class="tab_text">Заведующая отделом продаж и маркетинга</p>
+                        <p class="tab_text">Телефон: <a href="tel:+375 232 342690">+375 232 342690</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Секция Социальные сети -->
+        <section class="section_social">
+            <div class="container">
+                <div class="section_social-title">Подписаться</div>
+                <div class="section_social_wrapper">
+                    <a class="social_link_vk" href="#"><img src="img/ico_social/brand-vk.svg" alt="vk"></a>
+                    <a class="social_link_youtube" href="#"><img src="img/ico_social/brand-youtube.svg" alt="youtube"></a>
+                    <a class="social_link_telegram" href="#"><img src="img/ico_social/brand-telegram.svg" alt="telegram"></a>
+                    <a class="social_link_facebook" href="#"><img src="img/ico_social/brand-facebook.svg" alt="facebook"></a>
+                    <a class="social_link_instagram" href="#"><img src="img/ico_social/brand-instagram.svg" alt="instagram"></a>
+                    <a class="social_link_tiktok" href="#"><img src="img/ico_social/brand-tiktok.svg" alt="tiktok"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция Подвал -->
+        <footer class="footer">
+            <div class="container">
+                <div class="nav_main_footer">
+                    <ul>
+                        <li><a href="index.html">Новости</a></li>
+                        <li><a href="ad.html">Реклама</a></li>
+                        <li><a href="radio.html">Радио</a></li>
+                        <li><a href="about.html">О компании</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/slick_init.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+</body>
+</html>

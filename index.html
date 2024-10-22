@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости Гомель</title>
+    <!-- Подключение сброса стандартных стилей браузера -->
+    <link rel="stylesheet" href="css/reset.css"> 
+    <!-- Подключение стилей для работы Slick Slider (библиотека слайдеров) -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <!-- Подключение основным стилей для сайта -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Подключение стилей Media-запросов(для отображения на разных экранах) -->
+    <link rel="stylesheet" href="css/media-style.css">
+    <!-- Скрипты для работы Slick Slider -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- Модальное окно -->
+        <div id="modal_news" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 class="section_title">Прислать новость</h2>
+                <p class="title_desc">Хотите поделиться эксклюзивной новостью, интересными фото или видео?</p>
+                <div class="form_modal_wrap">
+                    <form action="#">
+                        <div class="form_input_block">
+                            <input type="text" placeholder="Фимилия *" required>
+                            <input type="text" placeholder="Имя *" required>
+                            <input type="text" placeholder="Отчество *" required>
+                            <input type="text" placeholder="Населенный пункт *" required>
+                            <input type="tel" name="" id="" placeholder="Номер телефона *" required>
+                            <input type="email" name="" id="" placeholder="Email *" required>
+                        </div>
+                        <div class="input_wrap">
+                            <label for="text_area_form">Какой новостью вы хотите с нами поделиться? *</label>
+                            <textarea name="text_area_form" id="text_area_form" rows="5"></textarea>
+                        </div>
+                        <div class="input_wrap">
+                            <label for="input_file">Резюме *</label>
+                            <input type="file" name="input_file" id="input_file" required>
+                        </div>
+                        <div class="input_chek">
+                            <input type="checkbox" name="check" id="check">
+                            <label for="check">Я принимаю условия пользовательского соглашения</label>
+                        </div>
+                        <input class="form_btn" type="submit" value="Отправить">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Шапка сайта -->
+        <header class="header">
+            <div class="container">
+                <div class="header_box">
+                    <div class="logo"><a href="index.html"><img src="img/Logo.png" alt="logo"> Теле-радио компания <br>"Гомель"</a></div>
+                    <div class="nav_main">
+                        <ul>
+                            <li><a href="index.html">Новости</a></li>
+                            <li><a href="ad.html">Реклама</a></li>
+                            <li><a href="radio.html">Радио</a></li>
+                            <li><a href="about.html">О компании</a></li>
+                            <li><a href="#" id="openModal">Прислать новость</a></li>
+                        </ul>
+                    </div>
+                    <div class="burger" id="burger">
+                        <img src="img/ico/menu.svg" alt="menu" class="burger-icon" id="burger-icon" >
+                    </div>
+                </div>
+            </div>            
+        </header>
+
+        <!-- Секция бегущая строка -->
+        <section class="section_marquee">
+            <div class="container">
+                <div class="marquee">
+                    <div>
+                        <a href="news_block.html">Привалов встретился с трудовым коллективом «Белоруснефти»</a> 
+                        <a href="news_block.html">Молчание = европейская дипломатия. В Речице состоялось судебное заседание по делу активистки радикально-экстремистского и националистического толка Полины Шарендо-Панасюк</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Секция Ключевые темы -->
+        <section class="section_key_inf">
+            <div class="container">
+                <ul class="list_key_inf">
+                    <li>Ключевые темы:</li>
+                    <li><a href="news_block.html">Ключевые темы</a></li>
+                    <li><a href="news_block.html">Президент</a></li>
+                    <li><a href="news_block.html">80 лет освобождения Беларуси</a></li>
+                    <li><a href="news_block.html">Год качества</a></li>
+                    <li><a href="news_block.html">Всебелорусское народное собрание 2024</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Секция Главная -->
+        <section class="section_main">
+            <div class="container">
+                <p class="main_title">Главное</p>
+                <div class="main_block">
+                    <div class="main_block_desc">
+                        <h1><a href="news_block.html">Лукашенко обратился к белорускам в День матери, сказав про силу материнства</a></h1>
+                        <p>Президент поздравил белорусок с самым трогательным и душевным осенним праздником</p>
+                        <a href="news_block.html" class="main_btn">Читать</a>
+                    </div>
+                    <div class="main_block_video">
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/k4W1gXoXbf4" title="Амазонка: плавающий лес | Неизведанные острова | Discovery Channel"  frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция слайдера с новостями -->
+        <section class="section_slider_news">
+            <div class="container">
+                <div class="slider_news">
+                    <div class="slider_item">
+                        <div class="slid_title"><a href="news_block.html">Глобальное потепление: учёные бьют тревогу</a></div>
+                        <div class="slid_data">22:33 | 12 января | 2024</div>
+                    </div>
+                    <div class="slider_item">
+                        <div class="slid_title"><a href="news_block.html">Крупная сделка: компания X поглощает компанию Y</a></div>
+                        <div class="slid_data">15:45 | 5 февраля | 2024</div>
+                    </div>
+                    <div class="slider_item">
+                        <div class="slid_title"><a href="news_block.html">Спорт на высоте: сборная страны выиграла чемпионат</a></div>
+                        <div class="slid_data">09:00 | 1 марта | 2024</div>
+                    </div>
+                    <div class="slider_item">
+                        <div class="slid_title"><a href="news_block.html">Технологический прорыв: новый гаджет, который изменит жизнь</a></div>
+                        <div class="slid_data">18:30 | 20 марта | 2024</div>
+                    </div>
+                    <div class="slider_item">
+                        <div class="slid_title"><a href="news_block.html">Культурное событие года: фестиваль искусства в центре города</a></div>
+                        <div class="slid_data">14:15 | 25 апреля | 2024</div>
+                    </div>
+                    <div class="slider_item">
+                        <div class="slid_title"><a href="news_block.html">Здоровье населения: новый закон о доступе к медицинским услугам</a></div>
+                        <div class="slid_data">08:50 | 3 мая | 2024</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция с типо рекламой -->
+        <div class="section_add">
+            <div class="container">
+                <img src="img/add.jpg" alt="add">
+            </div>
+        </div>
+
+        <!-- Секция с разными блоками новостей -->
+        <section class="section_block_news">
+            <div class="container">
+                <div class="section_block_news-wrapper">
+
+                    <!-- Блок Последние Новости -->
+                    <div class="block_last_news">
+                        <div class="block_news-header">
+                            <div class="block_last_news-title">Последние новости</div>
+                            <a href="news_block.html" class="block_last_news-btn">Читать все</a>
+                        </div>
+                        <div class="block_news-body">
+                            <a href="news_block.html" class="block_last_news-items">
+                                <div class="block_last_news-items-img"><img src="img/last_news/last_news_1.jpg" alt="it"></div>
+                                <div class="block_last_news-items-title">Новый рекорд: Спортсмен установил мировой стандарт!</div>
+                            </a>
+                            <a href="news_block.html" class="block_last_news-items">
+                                <div class="block_last_news-items-img"><img src="img/last_news/last_news_2.jpg" alt="it"></div>
+                                <div class="block_last_news-items-title">Технологические инновации: Анонс нового смартфона</div>
+                            </a>
+                            <a href="news_block.html" class="block_last_news-items">
+                                <div class="block_last_news-items-img"><img src="img/last_news/last_news_3.jpg" alt="it"></div>
+                                <div class="block_last_news-items-title">Экологические инициативы: Город запускает программу по очистке рек</div>
+                            </a>
+                            <a href="news_block.html" class="block_last_news-items">
+                                <div class="block_last_news-items-img"><img src="img/last_news/last_news_4.jpg" alt="it"></div>
+                                <div class="block_last_news-items-title">Культура на подъеме: Выставка современного искусства открылась в центре</div>
+                            </a>
+                            <a href="news_block.html" class="block_last_news-items">
+                                <div class="block_last_news-items-img"><img src="img/last_news/last_news_5.jpg" alt="it"></div>
+                                <div class="block_last_news-items-title">Финансовые новости: Рынок акций показывает стабильный рост</div>
+                            </a>
+                            <a href="news_block.html" class="block_last_news-items">
+                                <div class="block_last_news-items-img"><img src="img/last_news/last_news_6.jpg" alt="it"></div>
+                                <div class="block_last_news-items-title">Образование: Школы переходят на гибридное обучение</div>
+                            </a>
+                            <a href="news_block.html" class="block_last_news-items">
+                                <div class="block_last_news-items-img"><img src="img/last_news/last_news_7.jpg" alt="it"></div>
+                                <div class="block_last_news-items-title">Здоровье: Ученые сделали прорыв в лечении диабета</div>
+                            </a>
+                            <a href="news_block.html" class="block_last_news-items">
+                                <div class="block_last_news-items-img"><img src="img/last_news/last_news_8.jpg" alt="it"></div>
+                                <div class="block_last_news-items-title">Наука: Новый вид динозавра обнаружен в Южной Америке</div>
+                            </a>
+                            <a href="news_block.html" class="block_last_news-items">
+                                <div class="block_last_news-items-img"><img src="img/last_news/last_news_9.jpg" alt="it"></div>
+                                <div class="block_last_news-items-title">Путешествия: Туризм восстанавливается после пандемии</div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Блок Новости в мире -->
+                    <div class="block_news_world">
+                        <div class="block_news-header">
+                            <div class="block_last_news-title">В мире</div>
+                            <a href="news_block.html" class="block_last_news-btn">Новое</a>
+                        </div>
+                        <div class="block_news-body_slick">
+                                <div class="slick_container">
+                                    <a href="news_block.html"><img src="img/news_world/news_world_1.jpg" alt="s1"></a>
+                                    <div class="slick_descr">
+                                        <a class="slick-link" href="news_block.html">Мода: Уличный стиль становится главным трендом сезона</a>
+                                        <div class="slick-data">16:10 | 15 июня | 2024</div>
+                                    </div>
+                                </div>
+                                <div class="slick_container">
+                                    <a href="news_block.html"><img src="img/news_world/news_world_2.jpg" alt="s1"></a>
+                                    <div class="slick_descr">
+                                        <a class="slick-link" href="news_block.html">Кулинарные новинки: Ресторан открыл двери для гурманов</a>
+                                        <div class="slick-data">19:20 | 30 июля | 2024</div>
+                                    </div>
+                                </div>
+                                <div class="slick_container">
+                                    <a href="news_block.html"><img src="img/news_world/news_world_3.jpg" alt="s1"></a>
+                                    <div class="slick_descr">
+                                        <a class="slick-link" href="news_block.html">Спорт: Команда страны вышла в финал чемпионата мира</a>
+                                        <div class="slick-data">11:05 | 22 августа | 2024</div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <!-- Блок Наши подкасты -->
+                    <div class="block_news_podcast">
+                        <div class="block_news-header">
+                            <div class="block_last_news-title">Наши подкасты</div>
+                            <a href="news_block.html" class="block_last_news-btn">Слушать</a>
+                        </div>
+                        <div class="block_news-body">
+                            <!-- Кастомизированные аудио -->
+                            <div class="audio custom-audio">
+                                <audio src="#" id="audio"></audio>
+                                <div class="custom-audio-img">
+                                    <div class="image">
+                                        <img src="img/news_podcast/news_podcast_1.jpg" alt="logo">
+                                        <div id="play" class="audio-btn play">
+                                            <img src="img/ico/play.svg" alt="paly">
+                                        </div>
+                                        <div id="pause" class="audio-btn pause hide">
+                                            <img src="img/ico/pause.svg" alt="pause">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="custom-audio-descr">
+                                    <div class="title">Вдохновение на каждый день</div>
+                                    <div class="audio-controls">
+                                        <input type="range" id="seek-bar" value="0"> 
+                                    </div>
+                                    <div class="audio-time">
+                                        <div id="current-time">0:00</div>
+                                        <div>/</div>
+                                        <div id="duration">0:00</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="audio custom-audio">
+                                <audio src="#" id="audio"></audio>
+                                <div class="custom-audio-img">
+                                    <div class="image">
+                                        <img src="img/news_podcast/news_podcast_2.jpg" alt="logo">
+                                        <div id="play" class="audio-btn play">
+                                            <img src="img/ico/play.svg" alt="paly">
+                                        </div>
+                                        <div id="pause" class="audio-btn pause hide">
+                                            <img src="img/ico/pause.svg" alt="pause">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="custom-audio-descr">
+                                    <div class="title">Наука для всех</div>
+                                    <div class="audio-controls">
+                                        <input type="range" id="seek-bar" value="0"> 
+                                    </div>
+                                    <div class="audio-time">
+                                        <div id="current-time">0:00</div>
+                                        <div>/</div>
+                                        <div id="duration">0:00</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="audio custom-audio">
+                                <audio src="#" id="audio"></audio>
+                                <div class="custom-audio-img">
+                                    <div class="image">
+                                        <img src="img/news_podcast/news_podcast_3.jpg" alt="logo">
+                                        <div id="play" class="audio-btn play">
+                                            <img src="img/ico/play.svg" alt="paly">
+                                        </div>
+                                        <div id="pause" class="audio-btn pause hide">
+                                            <img src="img/ico/pause.svg" alt="pause">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="custom-audio-descr">
+                                    <div class="title">Истории из жизни</div>
+                                    <div class="audio-controls">
+                                        <input type="range" id="seek-bar" value="0">
+                                    </div>
+                                    <div class="audio-time">
+                                        <div id="current-time">0:00</div>
+                                        <div>/</div>
+                                        <div id="duration">0:00</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="audio custom-audio">
+                                <audio src="#" id="audio"></audio>
+                                <div class="custom-audio-img">
+                                    <div class="image">
+                                        <img src="img/news_podcast/news_podcast_4.jpg" alt="logo">
+                                        <div id="play" class="audio-btn play">
+                                            <img src="img/ico/play.svg" alt="paly">
+                                        </div>
+                                        <div id="pause" class="audio-btn pause hide">
+                                            <img src="img/ico/pause.svg" alt="pause">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="custom-audio-descr">
+                                    <div class="title">Кулинарные приключения</div>
+                                    <div class="audio-controls">
+                                        <input type="range" id="seek-bar" value="0">
+                                    </div>
+                                    <div class="audio-time">
+                                        <div id="current-time">0:00</div>
+                                        <div>/</div>
+                                        <div id="duration">0:00</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="audio custom-audio">
+                                <audio src="#" id="audio"></audio>
+                                <div class="custom-audio-img">
+                                    <div class="image">
+                                        <img src="img/news_podcast/news_podcast_5.jpg" alt="logo">
+                                        <div id="play" class="audio-btn play">
+                                            <img src="img/ico/play.svg" alt="paly">
+                                        </div>
+                                        <div id="pause" class="audio-btn pause hide">
+                                            <img src="img/ico/pause.svg" alt="pause">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="custom-audio-descr">
+                                    <div class="title">Технологии и мы</div>
+                                    <div class="audio-controls">
+                                        <input type="range" id="seek-bar" value="0">
+                                    </div>
+                                    <div class="audio-time">
+                                        <div id="current-time">0:00</div>
+                                        <div>/</div>
+                                        <div id="duration">0:00</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="audio custom-audio">
+                                <audio src="#" id="audio"></audio>
+                                <div class="custom-audio-img">
+                                    <div class="image">
+                                        <img src="img/news_podcast/news_podcast_6.jpg" alt="logo">
+                                        <div id="play" class="audio-btn play">
+                                            <img src="img/ico/play.svg" alt="paly">
+                                        </div>
+                                        <div id="pause" class="audio-btn pause hide">
+                                            <img src="img/ico/pause.svg" alt="pause">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="custom-audio-descr">
+                                    <div class="title">Путешествия без границ</div>
+                                    <div class="audio-controls">
+                                        <input type="range" id="seek-bar" value="0">
+                                    </div>
+                                    <div class="audio-time">
+                                        <div id="current-time">0:00</div>
+                                        <div>/</div>
+                                        <div id="duration">0:00</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="audio custom-audio">
+                                <audio src="#" id="audio"></audio>
+                                <div class="custom-audio-img">
+                                    <div class="image">
+                                        <img src="img/news_podcast/news_podcast_7.jpg" alt="logo">
+                                        <div id="play" class="audio-btn play">
+                                            <img src="img/ico/play.svg" alt="paly">
+                                        </div>
+                                        <div id="pause" class="audio-btn pause hide">
+                                            <img src="img/ico/pause.svg" alt="pause">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="custom-audio-descr">
+                                    <div class="title">Книги, которые изменили нас</div>
+                                    <div class="audio-controls">
+                                        <input type="range" id="seek-bar" value="0"> 
+                                    </div>
+                                    <div class="audio-time">
+                                        <div id="current-time">0:00</div>
+                                        <div>/</div>
+                                        <div id="duration">0:00</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="audio custom-audio">
+                                <audio src="#" id="audio"></audio>
+                                <div class="custom-audio-img">
+                                    <div class="image">
+                                        <img src="img/news_podcast/news_podcast_8.jpg" alt="logo">
+                                        <div id="play" class="audio-btn play">
+                                            <img src="img/ico/play.svg" alt="paly">
+                                        </div>
+                                        <div id="pause" class="audio-btn pause hide">
+                                            <img src="img/ico/pause.svg" alt="pause">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="custom-audio-descr">
+                                    <div class="title">Здоровье и счастье</div>
+                                    <div class="audio-controls">
+                                        <input type="range" id="seek-bar" value="0">
+                                    </div>
+                                    <div class="audio-time">
+                                        <div id="current-time">0:00</div>
+                                        <div>/</div>
+                                        <div id="duration">0:00</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="audio custom-audio">
+                                <audio src="#" id="audio"></audio>
+                                <div class="custom-audio-img">
+                                    <div class="image">
+                                        <img src="img/news_podcast/news_podcast_9.jpg" alt="logo">
+                                        <div id="play" class="audio-btn play">
+                                            <img src="img/ico/play.svg" alt="paly">
+                                        </div>
+                                        <div id="pause" class="audio-btn pause hide">
+                                            <img src="img/ico/pause.svg" alt="pause">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="custom-audio-descr">
+                                    <div class="title">Музыка в ритме жизни</div>
+                                    <div class="audio-controls">
+                                        <input type="range" id="seek-bar" value="0">
+                                    </div>
+                                    <div class="audio-time">
+                                        <div id="current-time">0:00</div>
+                                        <div>/</div>
+                                        <div id="duration">0:00</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Блок Сейчас читают -->
+                    <div class="block_news_reed">
+                        <div class="block_news-header">
+                            <div class="block_last_news-title">Сейчас читают</div>
+                        </div>
+                        <div class="block_news-body">
+                            <div class="block_news-body-wrap">
+                                <div class="block_news-body-title"><a href="news_block.html">Топ-10 советов по продуктивности</a></div>
+                                <div class="block_news-body-data">13:30 | 10 октября | 2024</div>
+                            </div>
+                            <div class="block_news-body-wrap">
+                                <div class="block_news-body-title"><a href="news_block.html">Как разобраться в искусственном интеллекте</a></div>
+                                <div class="block_news-body-data">17:25 | 29 января | 2024</div>
+                            </div>
+                            <div class="block_news-body-wrap">
+                                <div class="block_news-body-title"><a href="news_block.html">Лучшие рецепты для здорового питания</a></div>
+                                <div class="block_news-body-data">21:15 | 7 февраля | 2024</div>
+                            </div>
+                            <div class="block_news-body-wrap">
+                                <div class="block_news-body-title"><a href="news_block.html">Тренды моды 2024 года</a></div>
+                                <div class="block_news-body-data">12:00 | 11 марта | 2024</div>
+                            </div>
+                            <div class="block_news-body-wrap">
+                                <div class="block_news-body-title"><a href="news_block.html">Психология счастья: простые шаги к гармонии</a></div>
+                                <div class="block_news-body-data">23:05 | 14 апреля | 2024</div>
+                            </div>
+                            <div class="block_news-body-wrap">
+                                <div class="block_news-body-title"><a href="news_block.html">Секреты успешного удалённого обучения</a></div>
+                                <div class="block_news-body-data">09:45 | 24 мая | 2024</div>
+                            </div>
+                            <div class="block_news-body-wrap">
+                                <div class="block_news-body-title"><a href="news_block.html">Как оптимизировать свой бюджет</a></div>
+                                <div class="block_news-body-data">15:55 | 6 июня | 2024</div>
+                            </div>
+                            <div class="block_news-body-wrap">
+                                <div class="block_news-body-title"><a href="news_block.html">Путешествия на выходные: лучшие направления</a></div>
+                                <div class="block_news-body-data">10:30 | 28 июля | 2024</div>
+                            </div>
+                            <div class="block_news-body-wrap">
+                                <div class="block_news-body-title"><a href="news_block.html">Фитнес для занятых: эффективные тренировки</a></div>
+                                <div class="block_news-body-data">19:50 | 2 августа | 2024</div>
+                            </div>
+                            <div class="block_news-body-wrap">
+                                <div class="block_news-body-title"><a href="news_block.html">Технологии, которые изменят наш быт</a></div>
+                                <div class="block_news-body-data">14:25 | 5 сентября | 2024</div>
+                            </div>
+                            <div class="block_news-body-wrap">
+                                <div class="block_news-body-title"><a href="news_block.html">Искусство медитации: как начать практиковать</a></div>
+                                <div class="block_news-body-data">10:30 | 1 апреля | 2024</div>
+                            </div>
+                            <div class="block_news-body-wrap">
+                                <div class="block_news-body-title"><a href="news_block.html">Экологический след: что мы можем изменить</a></div>
+                                <div class="block_news-body-data">18:50 | 10 апреля | 2024</div>
+                            </div>
+                            <div class="block_news-body-wrap">
+                                <div class="block_news-body-title"><a href="news_block.html">Новые горизонты: как изучать иностранные языки</a></div>
+                                <div class="block_news-body-data">09:15 | 5 мая | 2024</div>
+                            </div>
+                            <div class="block_news-body-wrap">
+                                <div class="block_news-body-title"><a href="news_block.html">Книги, которые стоит прочитать в этом году</a></div>
+                                <div class="block_news-body-data">16:25 | 14 мая | 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция с типо рекламой -->
+        <div class="section_add">
+            <div class="container">
+                <img src="img/add2.jpg" alt="add">
+            </div>
+        </div>
+
+        <!-- Секция с прямыми трансляциями -->
+        <section class="section_broadcast">
+            <div class="container">
+                <div class="section_broadcast_title">
+                    <div class="broadcast_title">В эфире</div>
+                    <a href="news_block.html" class="boradcast_link">Смотреть все проекты</a>
+                </div>
+                <div class="section_broadcast_body">
+                    <div class="broadcast_item">
+                        <div class="broadcast_item-video">
+                            <iframe  src="https://www.youtube.com/embed/ko_w0hfQKoE" title="СЕМЬЯ В СИСТЕМЕ ЦЕННОСТЕЙ БЕЛОРУСОВ | &quot;Мнения&quot; 15.10.2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="broadcast_item-data">20:05 | 30 июня | 2024</div>
+                        <div class="broadcast_item-title">Главные события дня | "Мнения" 30.06.2024</div>
+                    </div>
+                    <div class="broadcast_item">
+                        <div class="broadcast_item-video">
+                            <iframe  src="https://www.youtube.com/embed/ko_w0hfQKoE" title="СЕМЬЯ В СИСТЕМЕ ЦЕННОСТЕЙ БЕЛОРУСОВ | &quot;Мнения&quot; 15.10.2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="broadcast_item-data">12:40 | 7 июля | 2024</div>
+                        <div class="broadcast_item-title">Экспертное мнение | "Мнения" 07.07.2024</div>
+                    </div>
+                    <div class="broadcast_item">
+                        <div class="broadcast_item-video">
+                            <iframe  src="https://www.youtube.com/embed/ko_w0hfQKoE" title="СЕМЬЯ В СИСТЕМЕ ЦЕННОСТЕЙ БЕЛОРУСОВ | &quot;Мнения&quot; 15.10.2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="broadcast_item-data">23:55 | 11 августа | 2024</div>
+                        <div class="broadcast_item-title">Новости в цифрах | "Мнения" 11.08.2024</div>
+                    </div>
+                    <div class="broadcast_item">
+                        <div class="broadcast_item-video">
+                            <iframe  src="https://www.youtube.com/embed/ko_w0hfQKoE" title="СЕМЬЯ В СИСТЕМЕ ЦЕННОСТЕЙ БЕЛОРУСОВ | &quot;Мнения&quot; 15.10.2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="broadcast_item-data">13:15 | 20 августа | 2024</div>
+                        <div class="broadcast_item-title">Краткий обзор недели | "Мнения" 20.08.2024</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция со слайдером "Актуальное" -->
+        <section class="section_current">
+            <div class="container">
+                <div class="section_current_title">Актуальное</div>
+                <div class="section_current_slider">
+                    <div>
+                        <a href="news_block.html" class="current_slider_link">Мировая экономика: прогнозы на 2024 год вызывают беспокойство</a>
+                        <div class="current_slider_data">17:35 | 3 сентября | 2024</div>
+                    </div>
+                    <div>
+                        <a href="news_block.html" class="current_slider_link">Технологии будущего: стартапы представили прорывные решения на выставке</a>
+                        <div class="current_slider_data">21:50 | 15 сентября | 2024</div>
+                    </div>
+                    <div>
+                        <a href="news_block.html" class="current_slider_link">Изменение климата: новые данные о последствиях для природных экосистем</a>
+                        <div class="current_slider_data">14:20 | 25 сентября | 2024</div>
+                    </div>
+                    <div>
+                        <a href="news_block.html" class="current_slider_link">Культура и искусство: выставка современного искусства привлекает тысячи посетителей</a>
+                        <div class="current_slider_data">11:05 | 28 января | 2024</div>
+                    </div>
+                    <div>
+                        <a href="news_block.html" class="current_slider_link">Спорт: команда страны готовится к предстоящему чемпионату мира</a>
+                        <div class="current_slider_data">19:40 | 12 февраля | 2024</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция Социальные сети -->
+        <section class="section_social">
+            <div class="container">
+                <div class="section_social-title">Подписаться</div>
+                <div class="section_social_wrapper">
+                    <a class="social_link_vk" href="#"><img src="img/ico_social/brand-vk.svg" alt="vk"></a>
+                    <a class="social_link_youtube" href="#"><img src="img/ico_social/brand-youtube.svg" alt="youtube"></a>
+                    <a class="social_link_telegram" href="#"><img src="img/ico_social/brand-telegram.svg" alt="telegram"></a>
+                    <a class="social_link_facebook" href="#"><img src="img/ico_social/brand-facebook.svg" alt="facebook"></a>
+                    <a class="social_link_instagram" href="#"><img src="img/ico_social/brand-instagram.svg" alt="instagram"></a>
+                    <a class="social_link_tiktok" href="#"><img src="img/ico_social/brand-tiktok.svg" alt="tiktok"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция Подвал -->
+        <footer class="footer">
+            <div class="container">
+                <div class="nav_main_footer">
+                    <ul>
+                        <li><a href="index.html">Новости</a></li>
+                        <li><a href="ad.html">Реклама</a></li>
+                        <li><a href="radio.html">Радио</a></li>
+                        <li><a href="about.html">О компании</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/slick_init.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+</body>
+</html>
