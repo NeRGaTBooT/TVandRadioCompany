@@ -75,11 +75,13 @@ var btn = document.getElementById("openModal");
 var span = document.getElementsByClassName("close")[0];
 var body = document.querySelector("body");
 
-// Клик по ссылке "Предложить новость"
+// Клик по ссылке "Прислать новость"
 btn.onclick = function() {
-    navMain.classList.remove('active'); // Закрыть меню
-    navMain.style.display = 'none'; // Установить display: none
-    burgerIcon.src = 'img/ico/menu.svg'; // Вернуть иконку меню в исходное состояние
+    if (window.innerWidth <= 1140) { // Проверка ширины окна, чтобы закрыть меню только на мобильных устройствах
+        navMain.classList.remove('active'); // Закрыть меню
+        navMain.style.display = 'none'; // Установить display: none
+        burgerIcon.src = 'img/ico/menu.svg'; // Вернуть иконку меню в исходное состояние
+    }
     modal.style.display = "block";
     body.style.overflow = "hidden"; // Запретить скролл основного содержимого
 }
