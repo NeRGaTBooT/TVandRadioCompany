@@ -93,6 +93,12 @@
 
 @media (max-width: 425px){
 
+    .section_title{
+        font-size: 20px;
+    }
+
+  
+
     .video-container{
         height: 150px;
     }
