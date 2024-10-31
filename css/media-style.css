@@ -43,6 +43,9 @@
 }
 
 @media (max-width: 768px){
+    .logo span{
+        display: none;
+    }
     .section_block_news-wrapper{
         flex-direction: column;
     }
@@ -92,6 +95,8 @@
 }
 
 @media (max-width: 425px){
+
+    
 
     .section_title{
         font-size: 20px;

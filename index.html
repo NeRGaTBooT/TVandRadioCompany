@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Новости Гомель</title>
+    <link rel="icon" href="favicon.png" type="image/png">
     <!-- Подключение сброса стандартных стилей браузера -->
     <link rel="stylesheet" href="css/reset.css"> 
     <!-- Подключение стилей для работы Slick Slider (библиотека слайдеров) -->
@@ -17,7 +18,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </head>
-<body>
+<body class="light-theme">
 
     <div class="wrapper">
         <!-- Модальное окно -->
@@ -58,8 +59,13 @@
         <header class="header">
             <div class="container">
                 <div class="header_box">
-                    <div class="logo"><a href="index.html"><img src="img/Logo.png" alt="logo"> Теле-радио компания <br>"Гомель"</a></div>
-                    <div class="nav_main">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="img/Logo.png" alt="logo">
+                            <span> Теле-радио компания <br>"Гомель"</span>
+                        </a>
+                    </div>
+                    <div class="nav_main" id="navMain">
                         <ul>
                             <li><a href="index.html">Новости</a></li>
                             <li><a href="ad.html">Реклама</a></li>
@@ -68,11 +74,28 @@
                             <li><a href="#" id="openModal">Прислать новость</a></li>
                         </ul>
                     </div>
+                    <ul class="advans_menu">
+                        <li>
+                            <a href="#" id="searchToggle"><img class="toggleTheme" src="img/ico/search.svg" alt="search"></a>
+                            <div class="search-box" id="searchBox">
+                                <input type="text" placeholder="Поиск..." id="searchInput" autocomplete="off">
+                                <img src="img/ico/x.svg" alt="close" class="close-icon" id="closeSearch">
+                                <div class="results" id="results"></div>
+                            </div>
+                        </li>
+                        <li><a href="#" id="themeToggle"><img class="toggleTheme" src="img/ico/moon.svg" alt="moon"></a></li>
+                        <li>
+                            <select name="" id="">
+                                <option value="рус">рус</option>
+                                <option value="бел">бел</option>
+                            </select>
+                        </li>
+                    </ul>
                     <div class="burger" id="burger">
-                        <img src="img/ico/menu.svg" alt="menu" class="burger-icon" id="burger-icon" >
+                        <img src="img/ico/menu.svg" alt="menu" class="burger-icon" id="burger-icon">
                     </div>
                 </div>
-            </div>            
+            </div>
         </header>
 
         <!-- Секция бегущая строка -->
@@ -107,14 +130,13 @@
                 <p class="main_title">Главное</p>
                 <div class="main_block">
                     <div class="main_block_desc">
-                        <h1><a href="news_block.html">Лукашенко обратился к белорускам в День матери, сказав про силу материнства</a></h1>
-                        <p>Президент поздравил белорусок с самым трогательным и душевным осенним праздником</p>
+                        <h1><a href="news_block.html">7 ноября музею Гомельского дворцово-паркового ансамбля исполняется 105 лет</a></h1>
+                        <p>Свою годовщину музей отмечает серией мероприятий</p>
                         <a href="news_block.html" class="main_btn">Читать</a>
                     </div>
                     <div class="main_block_video">
                         <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/k4W1gXoXbf4" title="Амазонка: плавающий лес | Неизведанные острова | Discovery Channel"  frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+                            <iframe src="https://www.youtube.com/embed/LY0cLck_iAM" title="7 ноября музею Гомельского дворцово-паркового ансамбля исполняется 105 лет" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -573,31 +595,31 @@
                 <div class="section_broadcast_body">
                     <div class="broadcast_item">
                         <div class="broadcast_item-video">
-                            <iframe  src="https://www.youtube.com/embed/ko_w0hfQKoE" title="СЕМЬЯ В СИСТЕМЕ ЦЕННОСТЕЙ БЕЛОРУСОВ | &quot;Мнения&quot; 15.10.2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/aeXd1ammK3M" title="ЗЕМЛЯ НАША | Дожинки | 30.10.2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
-                        <div class="broadcast_item-data">20:05 | 30 июня | 2024</div>
-                        <div class="broadcast_item-title">Главные события дня | "Мнения" 30.06.2024</div>
+                        <div class="broadcast_item-data">09:13 | 31 октября | 2024</div>
+                        <div class="broadcast_item-title">ЗЕМЛЯ НАША | Дожинки | 30.10.2024</div>
                     </div>
                     <div class="broadcast_item">
                         <div class="broadcast_item-video">
-                            <iframe  src="https://www.youtube.com/embed/ko_w0hfQKoE" title="СЕМЬЯ В СИСТЕМЕ ЦЕННОСТЕЙ БЕЛОРУСОВ | &quot;Мнения&quot; 15.10.2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/htIKiH9xXTA" title="Новые белорусы | Денис Ярмыш | 29.10.2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
-                        <div class="broadcast_item-data">12:40 | 7 июля | 2024</div>
-                        <div class="broadcast_item-title">Экспертное мнение | "Мнения" 07.07.2024</div>
+                        <div class="broadcast_item-data">14:51 | 30 октября | 2024</div>
+                        <div class="broadcast_item-title">Новые белорусы | Денис Ярмыш | 29.10.2024</div>
                     </div>
                     <div class="broadcast_item">
                         <div class="broadcast_item-video">
-                            <iframe  src="https://www.youtube.com/embed/ko_w0hfQKoE" title="СЕМЬЯ В СИСТЕМЕ ЦЕННОСТЕЙ БЕЛОРУСОВ | &quot;Мнения&quot; 15.10.2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/OzO0IApTzss" title="МНЕНИЯ | ОТЕЧЕСТВЕННАЯ КУКУРУЗА | 30.10.2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
-                        <div class="broadcast_item-data">23:55 | 11 августа | 2024</div>
-                        <div class="broadcast_item-title">Новости в цифрах | "Мнения" 11.08.2024</div>
+                        <div class="broadcast_item-data">12:47 | 30 октября | 2024</div>
+                        <div class="broadcast_item-title">МНЕНИЯ | ОТЕЧЕСТВЕННАЯ КУКУРУЗА | 30.10.2024</div>
                     </div>
                     <div class="broadcast_item">
                         <div class="broadcast_item-video">
-                            <iframe  src="https://www.youtube.com/embed/ko_w0hfQKoE" title="СЕМЬЯ В СИСТЕМЕ ЦЕННОСТЕЙ БЕЛОРУСОВ | &quot;Мнения&quot; 15.10.2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/8T859ulN8LM" title="НОВОСТИ-СЕТИ | ЭПИЗОД 77 |  29.10.2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
-                        <div class="broadcast_item-data">13:15 | 20 августа | 2024</div>
-                        <div class="broadcast_item-title">Краткий обзор недели | "Мнения" 20.08.2024</div>
+                        <div class="broadcast_item-data">08:07 | 30 октября | 2024</div>
+                        <div class="broadcast_item-title">НОВОСТИ-СЕТИ | ЭПИЗОД 77 | 29.10.2024</div>
                     </div>
                 </div>
             </div>
