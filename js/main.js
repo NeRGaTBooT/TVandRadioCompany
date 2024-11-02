@@ -238,3 +238,69 @@ document.getElementById('themeToggle').addEventListener('click', function() {
         localStorage.setItem('theme', 'light-theme'); // Сохраняем светлую тему
     }
 });
+
+
+
+
+// смена языка
+
+// Функция для установки языка
+function setLanguage(langData) {
+    localStorage.setItem('lang', JSON.stringify(langData));
+
+    // Обновление текстового содержимого элементов с атрибутом data-key
+    document.querySelectorAll('[data-key]').forEach(function(element) {
+        const key = element.getAttribute('data-key');
+        const translatedText = langData[key];
+
+        // Обновление значения placeholder в input элементах
+        if (element.tagName === 'INPUT') {
+            if (element.type === 'submit') {
+                element.value = translatedText; // Обновление значения атрибута value для input submit
+            } else {
+                element.placeholder = translatedText; // Обновление значения placeholder для других input элементов
+            }
+        } else {
+            if (translatedText) {
+                element.textContent = translatedText;
+            } else {
+                console.warn(`Translation missing for key: ${key}`);
+            }
+        }
+    });
+}
+
+// Функция для загрузки данных
+function fetchData(url) {
+    return fetch(url)
+        .then(response => response.json())
+        .catch(error => console.error('Error fetching data:', error));
+}
+
+// Обработчик события изменения языка в элементе select
+document.getElementById('langSelect').addEventListener('change', function(event) {
+    const selectedLang = event.target.value;
+    fetchData('lang.json')
+        .then(data => {
+            setLanguage(data[selectedLang]);
+            localStorage.setItem('selectedLang', selectedLang); // Сохранение выбранного языка
+        });
+});
+
+// Проверка наличия сохраненного языка
+const savedLang = localStorage.getItem('lang');
+const selectedLang = localStorage.getItem('selectedLang');
+if (savedLang) {
+    setLanguage(JSON.parse(savedLang));
+}
+
+// Загрузка языка на основе выбранного языка, если доступно
+if (selectedLang) {
+    fetchData('lang.json')
+        .then(data => setLanguage(data[selectedLang]));
+}
+
+// Восстановление выбранного языка в выпадающем списке при загрузке страницы
+if (selectedLang) {
+    document.getElementById('langSelect').value = selectedLang;
+}

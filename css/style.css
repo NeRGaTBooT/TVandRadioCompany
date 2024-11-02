@@ -38,7 +38,7 @@
     --color-background-main: #3a3b3c; 
     --color-background-main-light: #515254; 
     --color-background-light: #fff; 
-    --color-accent: #e08a4d; 
+    --color-accent: #ff7d1f; 
     --color-text-hover: #f18232;
     --color-text-dark: #000000; 
     --color-text-light: #ffffff; 
@@ -149,6 +149,10 @@ body{
 
 audio {
     width: 100%;
+}
+
+.lang_select option:hover{
+    background-color: red;
 }
 
 .container {

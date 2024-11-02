@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Новости Гомель</title>
+    <link rel="icon" href="favicon.png" type="image/png">
     <!-- Подключение сброса стандартных стилей браузера -->
     <link rel="stylesheet" href="css/reset.css"> 
     <!-- Подключение стилей для работы Slick Slider (библиотека слайдеров) -->
@@ -21,33 +22,29 @@
 
     <div class="wrapper">
 
-        <!-- Модальное окно -->
-        <div id="modal_news" class="modal">
+         <!-- Модальное окно -->
+         <div id="modal_news" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <h2 class="section_title">Прислать новость</h2>
-                <p class="title_desc">Хотите поделиться эксклюзивной новостью, интересными фото или видео?</p>
+                <h2 class="section_title" data-key="lang_modal_title_7">Прислать новость</h2>
+                <p class="title_desc" data-key="lang_modal_desc">Хотите поделиться эксклюзивной новостью, интересными фото или видео?</p>
                 <div class="form_modal_wrap">
                     <form action="#">
                         <div class="form_input_block">
-                            <input type="text" placeholder="Фимилия *" required>
-                            <input type="text" placeholder="Имя *" required>
-                            <input type="text" placeholder="Отчество *" required>
-                            <input type="text" placeholder="Населенный пункт *" required>
-                            <input type="tel" name="" id="" placeholder="Номер телефона *" required>
+                            <input type="text" data-key="lang_modal_input_t1" placeholder="Фимилия *" required>
+                            <input type="text" data-key="lang_modal_input_t2" placeholder="Имя *" required>
+                            <input type="text" data-key="lang_modal_input_t3" placeholder="Отчество *" required>
+                            <input type="text" data-key="lang_modal_input_t4" placeholder="Населенный пункт *" required>
+                            <input type="tel" name="" id="" data-key="lang_modal_input_t5" placeholder="Номер телефона *" required>
                             <input type="email" name="" id="" placeholder="Email *" required>
                         </div>
                         <div class="input_wrap">
-                            <label for="text_area_form">Какой новостью вы хотите с нами поделиться? *</label>
+                            <label for="text_area_form" data-key="lang_modal_area_form">Какой новостью вы хотите с нами поделиться? *</label>
                             <textarea name="text_area_form" id="text_area_form" rows="5"></textarea>
-                        </div>
-                        <div class="input_wrap">
-                            <label for="input_file">Резюме *</label>
-                            <input type="file" name="input_file" id="input_file" required>
                         </div>
                         <div class="input_chek">
                             <input type="checkbox" name="check" id="check">
-                            <label for="check">Я принимаю условия пользовательского соглашения</label>
+                            <label for="check" data-key="lang_vak_form_check">Я принимаю условия пользовательского соглашения</label>
                         </div>
                         <input class="form_btn" type="submit" value="Отправить">
                     </form>
@@ -67,27 +64,27 @@
                     </div>
                     <div class="nav_main" id="navMain">
                         <ul>
-                            <li><a href="index.html">Новости</a></li>
-                            <li><a href="ad.html">Реклама</a></li>
-                            <li><a href="radio.html">Радио</a></li>
-                            <li><a href="about.html">О компании</a></li>
-                            <li><a href="#" id="openModal">Прислать новость</a></li>
+                            <li><a href="index.html" data-key="lang_nav_main_items_news">Новости</a></li>
+                            <li><a href="ad.html" data-key="lang_nav_main_items_ad">Реклама</a></li>
+                            <li><a href="radio.html" data-key="lang_nav_main_items_radio">Радио</a></li>
+                            <li><a href="about.html" data-key="lang_nav_main_items_about">О компании</a></li>
+                            <li><a href="#" id="openModal" data-key="lang_nav_main_items_sendNews">Прислать новость</a></li>
                         </ul>
                     </div>
                     <ul class="advans_menu">
                         <li>
                             <a href="#" id="searchToggle"><img class="toggleTheme" src="img/ico/search.svg" alt="search"></a>
                             <div class="search-box" id="searchBox">
-                                <input type="text" placeholder="Поиск..." id="searchInput" autocomplete="off">
+                                <input type="text" data-key="lang_input_search" placeholder="Поиск..." id="searchInput" autocomplete="off">
                                 <img src="img/ico/x.svg" alt="close" class="close-icon" id="closeSearch">
                                 <div class="results" id="results"></div>
                             </div>
                         </li>
                         <li><a href="#" id="themeToggle"><img class="toggleTheme" src="img/ico/moon.svg" alt="moon"></a></li>
                         <li>
-                            <select name="" id="">
-                                <option value="рус">рус</option>
-                                <option value="бел">бел</option>
+                            <select name="langSelect" id="langSelect">
+                                <option value="ru">RU</option>
+                                <option value="eng">ENG</option>
                             </select>
                         </li>
                     </ul>
@@ -103,8 +100,8 @@
             <div class="container">
                 <div class="marquee">
                     <div>
-                        <a href="news_block.html">Привалов встретился с трудовым коллективом «Белоруснефти»</a> 
-                        <a href="news_block.html">Молчание = европейская дипломатия. В Речице состоялось судебное заседание по делу активистки радикально-экстремистского и националистического толка Полины Шарендо-Панасюк</a>
+                        <a href="news_block.html" data-key="lang_news_block_items_1">Привалов встретился с трудовым коллективом «Белоруснефти»</a> 
+                        <a href="news_block.html" data-key="lang_news_block_items_2">Молчание = европейская дипломатия. В Речице состоялось судебное заседание по делу активистки радикально-экстремистского и националистического толка Полины Шарендо-Панасюк</a>
                     </div>
                 </div>
             </div>
@@ -112,53 +109,53 @@
 
         <section class="section_ad">
             <div class="container">
-                <h2 class="section_title">Реклама</h2>
-                <p class="desc_ad">Производство и размещение рекламы</p>
+                <h2 class="section_title" data-key="lang_ad_title">Реклама</h2>
+                <p class="desc_ad" data-key="lang_ad_desc">Производство и размещение рекламы</p>
                 <div class="section_ad_wrap">
-                    <div class="ad_item">
+                    <div class="ad_item" data-key="lang_ad_items_1">
                         Размещение рекламных видеороликов
                     </div>
-                    <div class="ad_item">
+                    <div class="ad_item" data-key="lang_ad_items_2">
                         Размещение информации в “Бегущей строке” 1слово - 2,40 руб.
                     </div>
-                    <div class="ad_item">
+                    <div class="ad_item" data-key="lang_ad_items_3">
                         Производство рекламных видеороликов
                     </div>
-                    <div class="ad_item">
+                    <div class="ad_item" data-key="lang_ad_items_4">
                         Производство и размещение видеосюжета в программах “Навiны Рэгiёна”, “Ранехонько”
                     </div>
-                    <div class="ad_item">
+                    <div class="ad_item" data-key="lang_ad_items_5">
                         Производство презентационных фильмов
                     </div>
-                    <div class="ad_item">
+                    <div class="ad_item" data-key="lang_ad_items_6">
                         Производство и размещение коммерческих передач
                     </div>
-                    <div class="ad_item">
+                    <div class="ad_item" data-key="lang_ad_items_7">
                         Партнер показа
                     </div>
                 </div>
-                <h2 class="section_title">Связаться с нами</h2>
+                <h2 class="section_title" data-key="lang_ad_social_title">Связаться с нами</h2>
                 <div class="section_ad_kontakts">
                     <div class="tab_item_1">
-                        <p class="tab_text_name"><b>Добриян Александр Владимирович</b></p>
-                        <p class="tab_text">Директор</p>
-                        <p class="tab_text">Телефон приемной: <a href="tel:+375 232 342678">+375 232 342678</a></p>
-                        <p class="tab_text">Электронный адрес приёмной: <a href="mailto:sekretar@tvrgomel.by">sekretar@tvrgomel.by</a></p>
+                        <p class="tab_text_name"><b data-key="lang_ad_social_name_1">Добриян Александр Владимирович</b></p>
+                        <p class="tab_text" data-key="lang_ad_text_1">Директор</p>
+                        <p class="tab_text" ><span data-key="lang_ad_text_2">Телефон приемной:</span> <a href="tel:+375 232 342678">+375 232 342678</a></p>
+                        <p class="tab_text" data-key="lang_ad_text_3">Электронный адрес приёмной: <a href="mailto:sekretar@tvrgomel.by">sekretar@tvrgomel.by</a></p>
                     </div>
                     <div class="tab_item_1">
-                        <p class="tab_text_name"><b>Василюк Елена Анатольевна</b></p>
-                        <p class="tab_text">Заместитель директора</p>
-                        <p class="tab_text">Телефон: <a href="tel:+375 232 342690">+375 232 342690</a></p>
+                        <p class="tab_text_name"><b data-key="lang_ad_social_name_2">Василюк Елена Анатольевна</b></p>
+                        <p class="tab_text" data-key="lang_ad_text_4">Заместитель директора</p>
+                        <p class="tab_text" ><span data-key="lang_ad_text_5">Телефон:</span> <a href="tel:+375 232 342690">+375 232 342690</a></p>
                     </div>
                     <div class="tab_item_1">
-                        <p class="tab_text_name"><b>Котов Дмитрий Викторович</b></p>
-                        <p class="tab_text">Продюсер исполнительный сектора подготовки информационных программ.</p>
-                        <p class="tab_text">Телефон: <a href="tel:+375 232 342690">+375 232 342690</a></p>
+                        <p class="tab_text_name"><b data-key="lang_ad_social_name_3">Котов Дмитрий Викторович</b></p>
+                        <p class="tab_text" data-key="lang_ad_text_6">Продюсер исполнительный сектора подготовки информационных программ.</p>
+                        <p class="tab_text" ><span data-key="lang_ad_text_7">Телефон:</span> <a href="tel:+375 232 342690">+375 232 342690</a></p>
                     </div>
                     <div class="tab_item_1">
-                        <p class="tab_text_name"><b>Новик Татьяна Валерьевна</b></p>
-                        <p class="tab_text">Заведующая отделом продаж и маркетинга</p>
-                        <p class="tab_text">Телефон: <a href="tel:+375 232 342690">+375 232 342690</a></p>
+                        <p class="tab_text_name"><b data-key="lang_ad_social_name_4">Новик Татьяна Валерьевна</b></p>
+                        <p class="tab_text" data-key="lang_ad_text_8">Заведующая отделом продаж и маркетинга</p>
+                        <p class="tab_text" ><span data-key="lang_ad_text_9">Телефон:</span> <a href="tel:+375 232 342690">+375 232 342690</a></p>
                     </div>
                 </div>
             </div>
@@ -167,7 +164,7 @@
         <!-- Секция Социальные сети -->
         <section class="section_social">
             <div class="container">
-                <div class="section_social-title">Подписаться</div>
+                <div class="section_social-title" data-key="lang_title_items_8">Подписаться</div>
                 <div class="section_social_wrapper">
                     <a class="social_link_vk" href="#"><img src="img/ico_social/brand-vk.svg" alt="vk"></a>
                     <a class="social_link_youtube" href="#"><img src="img/ico_social/brand-youtube.svg" alt="youtube"></a>
@@ -184,15 +181,14 @@
             <div class="container">
                 <div class="nav_main_footer">
                     <ul>
-                        <li><a href="index.html">Новости</a></li>
-                        <li><a href="ad.html">Реклама</a></li>
-                        <li><a href="radio.html">Радио</a></li>
-                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="index.html" data-key="lang_nav_main_items_news">Новости</a></li>
+                        <li><a href="ad.html" data-key="lang_nav_main_items_ad">Реклама</a></li>
+                        <li><a href="radio.html" data-key="lang_nav_main_items_radio">Радио</a></li>
+                        <li><a href="about.html" data-key="lang_nav_main_items_about">О компании</a></li>
                     </ul>
                 </div>
             </div>
         </footer>
-    </div>
 
     <script src="js/main.js"></script>
     <script src="js/slick_init.js"></script>
