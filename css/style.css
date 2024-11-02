@@ -81,6 +81,10 @@ body.dark-theme .news_item{
     color: var(--color-text-light);
 }
 
+body.dark-theme .modal-content .section_title{
+    color: var(--color-text-dark);
+}
+
 body.dark-theme .section_block_news{
     background-color: var(--color-background-main);
 }
