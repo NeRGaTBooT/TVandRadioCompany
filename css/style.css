@@ -153,6 +153,7 @@ body{
 
 audio {
     width: 100%;
+    -webkit-appearance: none;
 }
 
 .lang_select option:hover{
