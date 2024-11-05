@@ -111,6 +111,22 @@
     .tab_vak_form .tab1_title{
         font-size: 20px;
     }
+
+    .main_block_desc h1 a{
+        font-size: 20px;
+    }
+
+    .section_social-title{
+        font-size: 30px;
+    }
+
+    .wrpa_table table{
+        font-size: 15px;
+    }
+
+    .tab-button {
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 320px){
