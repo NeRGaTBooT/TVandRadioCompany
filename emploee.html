@@ -18,12 +18,11 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </head>
-<body>
+<body class="light-theme">
 
     <div class="wrapper">
-
-        <!-- Модальное окно -->
-        <div id="modal_news" class="modal">
+         <!-- Модальное окно -->
+         <div id="modal_news" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <h2 class="section_title" data-key="lang_modal_title_7">Прислать новость</h2>
@@ -46,11 +45,12 @@
                             <input type="checkbox" name="check" id="check">
                             <label for="check" data-key="lang_vak_form_check">Я принимаю условия пользовательского соглашения</label>
                         </div>
-                        <input class="form_btn" type="submit" value="Отправить">
+                        <input class="form_btn" data-key="lang_modal_input_btn" type="submit" value="Отправить">
                     </form>
                 </div>
             </div>
         </div>
+
         <!-- Шапка сайта -->
         <header class="header">
             <div class="container">
@@ -128,68 +128,62 @@
             </div>
         </section>
 
-        <section class="section_news">
+        <section class="section_emploee">
             <div class="container">
-                <h2 class="section_title" data-key="lang_title_items_9">Последние новости</h2>
-                <div class="news_wrapper">
-                    <div class="news_item">
-                        <div class="news_item-img"><img src="img/news_block/news_block_1.jpg" alt=""></div>
-                        <div class="news_item-body">
-                            <div class="news_item-body-wrap">
-                                <div class="news_item-body-title" data-key="lang_section_news_title_1">Исследование: Влияние сна на продуктивность</div>
-                                <div class="news_item-body-desc" data-key="lang_section_news_desc_1">Недавнее исследование показало, что качество сна имеет огромное значение для нашей продуктивности и общего благополучия. Ученые обнаружили, что недостаток сна может существенно снижать концентрацию и работоспособность в течение дня. Узнайте, какие рекомендации дают специалисты для улучшения качества сна и повышения производительности.</div>
-                            </div>
-                            <a href="#" class="news_item-link" data-key="lang_section_news_link">Перейти</a>
+                <h2 class="section_emploee_title" data-key="lang_emploee_title">Наша команда</h2>
+                <div class="emploee_block">
+                    <div class="emploee_items">
+                        <div class="emploee_items_img">
+                            <img src="img/foto1.jpg" alt="foto">
+                        </div>
+                        <div class="emploee_items_body">
+                            <div class="emploee_items_name" data-key="lang_emploee_name_1">Добриян Александр Владимирович</div>
+                            <div class="emploee_items_desc" data-key="lang_emploee_desc_1">Директор</div>
                         </div>
                     </div>
-                    <div class="news_item">
-                        <div class="news_item-img"><img src="img/news_block/news_block_2.jpg" alt=""></div>
-                        <div class="news_item-body">
-                            <div class="news_item-body-wrap">
-                                <div class="news_item-body-title" data-key="lang_section_news_title_2">Новый рекорд: SpaceX запустила 100 спутников за один запуск</div>
-                                <div class="news_item-body-desc" data-key="lang_section_news_desc_2">Впечатляющее достижение космической компании SpaceX! Компания успешно запустила целых 100 спутников за один запуск ракеты. Этот рекордный запуск открывает новую эру в коммерческом космосе. Подробности и видео этого исторического события доступны по ссылке ниже.</div>
-                            </div>
-                            <a href="#" class="news_item-link" data-key="lang_section_news_link">Перейти</a>
+                    <div class="emploee_items">
+                        <div class="emploee_items_img">
+                            <img src="img/foto2.jpg" alt="foto">
+                        </div>
+                        <div class="emploee_items_body">
+                            <div class="emploee_items_name" data-key="lang_emploee_name_2">Василюк Елена Анатольевна</div>
+                            <div class="emploee_items_desc" data-key="lang_emploee_desc_2">Заместитель директора</div>
                         </div>
                     </div>
-                    <div class="news_item">
-                        <div class="news_item-img"><img src="img/news_block/news_block_3.jpg" alt=""></div>
-                        <div class="news_item-body">
-                            <div class="news_item-body-wrap">
-                                <div class="news_item-body-title" data-key="lang_section_news_title_3">Искусственный интеллект в медицине: революция или опасность?</div>
-                                <div class="news_item-body-desc" data-key="lang_section_news_desc_3">Дискуссия о влиянии искусственного интеллекта на медицину набирает обороты. Как машины могут помочь в диагностике и лечении, и насколько это безопасно? В новом материале мы рассмотрим преимущества и риски использования ИИ в здравоохранении и поделимся мнениями экспертов.</div>
-                            </div>
-                            <a href="#" class="news_item-link" data-key="lang_section_news_link">Перейти</a>
+                    <div class="emploee_items">
+                        <div class="emploee_items_img">
+                            <img src="img/foto3.jpg" alt="foto">
+                        </div>
+                        <div class="emploee_items_body">
+                            <div class="emploee_items_name" data-key="lang_emploee_name_3">Котов Дмитрий Викторович</div>
+                            <div class="emploee_items_desc" data-key="lang_emploee_desc_3">Продюсер телешоу</div>
                         </div>
                     </div>
-                    <div class="news_item">
-                        <div class="news_item-img"><img src="img/news_block/news_block_4.jpg" alt=""></div>
-                        <div class="news_item-body">
-                            <div class="news_item-body-wrap">
-                                <div class="news_item-body-title" data-key="lang_section_news_title_4">Культурное событие: выставка современного искусства открылась в центре города</div>
-                                <div class="news_item-body-desc" data-key="lang_section_news_desc_4">Не упустите возможность окунуться в мир современного искусства! В центре города открылась уникальная выставка, объединяющая произведения талантливых художников со всего мира. Узнайте о творческих концепциях, которые легли в основу выставки, и откройте для себя новые художественные горизонты.</div>
-                            </div>
-                            <a href="#" class="news_item-link" data-key="lang_section_news_link">Перейти</a>
+                    <div class="emploee_items">
+                        <div class="emploee_items_img">
+                            <img src="img/foto4.jpg" alt="foto">
+                        </div>
+                        <div class="emploee_items_body">
+                            <div class="emploee_items_name" data-key="lang_emploee_name_4">Новик Татьяна Валерьевна</div>
+                            <div class="emploee_items_desc" data-key="lang_emploee_desc_4">Заведующая отделом продаж и маркетинга</div>
                         </div>
                     </div>
-                    <div class="news_item">
-                        <div class="news_item-img"><img src="img/news_block/news_block_5.jpg" alt=""></div>
-                        <div class="news_item-body">
-                            <div class="news_item-body-wrap">
-                                <div class="news_item-body-title" data-key="lang_section_news_title_5">Кулинарный мастер-класс: учимся готовить роллы в домашних условиях</div>
-                                <div class="news_item-body-desc" data-key="lang_section_news_desc_5">Хотите научиться готовить вкусные и оригинальные роллы прямо у себя дома? Присоединяйтесь к нашему кулинарному мастер-классу, где опытный шеф-повар поделится с вами секретами приготовления лучших рецептов. Регистрация открыта!</div>
-                            </div>
-                            <a href="#" class="news_item-link" data-key="lang_section_news_link">Перейти</a>
+                    <div class="emploee_items">
+                        <div class="emploee_items_img">
+                            <img src="img/foto5.jpg" alt="foto">
+                        </div>
+                        <div class="emploee_items_body">
+                            <div class="emploee_items_name" data-key="lang_emploee_name_5">Смирнова Екатерина Николаевна</div>
+                            <div class="emploee_items_desc" data-key="lang_emploee_desc_5">Директор по маркетингу и рекламе</div>
                         </div>
                     </div>
-                    <div class="news_item">
-                        <div class="news_item-img"><img src="img/news_block/news_block_6.jpg" alt=""></div>
-                        <div class="news_item-body">
-                            <div class="news_item-body-wrap">
-                                <div class="news_item-body-title" data-key="lang_section_news_title_6">Экологическая инициатива: посадка 1000 деревьев в парке города</div>
-                                <div class="news_item-body-desc" data-key="lang_section_news_desc_6">Присоединяйтесь к экологической инициативе по посадке 1000 деревьев в центральном парке города! Это уникальная возможность внести свой вклад в сохранение окружающей среды и создание зеленых зон для будущих поколений. Подробности о мероприятии и как присоединиться доступны по ссылке ниже.</div>
-                            </div>
-                            <a href="#" class="news_item-link" data-key="lang_section_news_link">Перейти</a>
+                    <div class="emploee_items">
+                        <div class="emploee_items_img">
+                            <img src="img/foto6.jpg" alt="foto">
+                        </div>
+                        <div class="emploee_items_body">
+                            <div class="emploee_items_name" data-key="lang_emploee_name_6">Козлова Светлана Игоревна</div>
+                            <div class="emploee_items_desc" data-key="lang_emploee_desc_6">Оператор видеосъемки</div>
                         </div>
                     </div>
                 </div>
@@ -222,7 +216,6 @@
                         <li><a href="about.html" data-key="lang_nav_main_items_about">О компании</a></li>
                     </ul>
                 </div>
-                
                 <div class="sidebar_menu_footer">
                     <ul>
                         <li data-key="lang_sidebar_menu_title_1">Телевидение</li>

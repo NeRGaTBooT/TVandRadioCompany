@@ -4,7 +4,24 @@
       "lang_nav_main_items_ad": "Реклама",
       "lang_nav_main_items_radio": "Радио",
       "lang_nav_main_items_about": "О компании",
+      "lang_nav_main_items_emploee": "Сотрудники",
       "lang_nav_main_items_sendNews": "Прислать новость",
+
+      "lang_sidebar_menu_title_1": "Телевидение",
+      "lang_sidebar_menu_items_1": "ТРК Гродно",
+      "lang_sidebar_menu_items_2": "ТРК Могилев",
+      "lang_sidebar_menu_items_3": "ТРК Брест",
+      "lang_sidebar_menu_title_2": "Радио",
+      "lang_sidebar_menu_items_4": "Гомель FM",
+      "lang_sidebar_menu_items_5": "Радио Беларусь",
+      "lang_sidebar_menu_items_6": "Радио Нелли-инфо",
+      "lang_sidebar_menu_items_7": "Радио МИР",
+      "lang_sidebar_menu_items_8": "Радиус FM",
+      "lang_sidebar_menu_title_3": "Интернет",
+      "lang_sidebar_menu_items_9": "БЕЛТЕЛЕРАДИОКОМПАНИЯ",
+      "lang_sidebar_menu_items_10": "Интернет-портал Президент",
+
+
 
       "lang_news_block_items_1": "Привалов встретился с трудовым коллективом «Белоруснефти»",
       "lang_news_block_items_2": "Молчание = европейская дипломатия. В Речице состоялось судебное заседание по делу активистки радикально-экстремистского и националистического толка Полины Шарендо-Панасюк",
@@ -294,7 +311,21 @@
       "lang_modal_input_t3": "Отчество *",
       "lang_modal_input_t4": "Населенный пункт *",
       "lang_modal_input_t5": "Номер телефона *",
-      "lang_modal_input_btn": "Отправить"
+      "lang_modal_input_btn": "Отправить",
+
+      "lang_emploee_title": "Наша команда",
+      "lang_emploee_name_1": "Добриян Александр Владимирович",
+      "lang_emploee_name_2": "Василюк Елена Анатольевна",
+      "lang_emploee_name_3": "Котов Дмитрий Викторович",
+      "lang_emploee_name_4": "Новик Татьяна Валерьевна",
+      "lang_emploee_name_5": "Смирнова Екатерина Николаевна",
+      "lang_emploee_name_6": "Козлова Светлана Игоревна",
+      "lang_emploee_desc_1": "Директор",
+      "lang_emploee_desc_2": "Заместитель директора",
+      "lang_emploee_desc_3": "Продюсер телешоу",
+      "lang_emploee_desc_4": "Заведующая отделом продаж и маркетинга",
+      "lang_emploee_desc_5": "Директор по маркетингу и рекламе",
+      "lang_emploee_desc_6": "Оператор видеосъемки"
 
     },
     "eng": {
@@ -302,7 +333,22 @@
       "lang_nav_main_items_ad": "Advertising",
       "lang_nav_main_items_radio": "Radio",
       "lang_nav_main_items_about": "About",
+      "lang_nav_main_items_emploee": "Employees",
       "lang_nav_main_items_sendNews": "Send news",
+
+      "lang_sidebar_menu_title_1": "TV",
+      "lang_sidebar_menu_items_1": "TRC Grodno",
+      "lang_sidebar_menu_items_2": "TRC Mogilev",
+      "lang_sidebar_menu_items_3": "TRC Brest",
+      "lang_sidebar_menu_title_2": "Radio",
+      "lang_sidebar_menu_items_4": "Gomel FM",
+      "lang_sidebar_menu_items_5": "Radio Belarus",
+      "lang_sidebar_menu_items_6": "Radio Nelly-info",
+      "lang_sidebar_menu_items_7": "Radio MIR",
+      "lang_sidebar_menu_items_8": "Radius FM",
+      "lang_sidebar_menu_title_3": "Internet",
+      "lang_sidebar_menu_items_9": "BELTELERADIOCOMPANY",
+      "lang_sidebar_menu_items_10": "Internet portal President",
 
       "lang_news_block_items_1": "Privalov met with the workforce of «Belorusneft»",
       "lang_news_block_items_2": "Silence = European diplomacy. A court hearing was held in Rechitsa in the case of radical extremist and nationalist activist Polina Sharendo-Panasyuk",
@@ -589,6 +635,20 @@
       "lang_modal_input_t3": "Lastname *",
       "lang_modal_input_t4": "Locality *",
       "lang_modal_input_t5": "Phone number *",
-      "lang_modal_input_btn": "Send"
+      "lang_modal_input_btn": "Send",
+
+      "lang_emploee_title": "Our team",
+      "lang_emploee_name_1": "Dobriyan Alexander Vladimirovich",
+      "lang_emploee_name_2": "Vasilyuk Elena Anatolevna",
+      "lang_emploee_name_3": "Kotov Dmitry Viktorovich",
+      "lang_emploee_name_4": "Novik Tatyana Valerievna",
+      "lang_emploee_name_5": "Smirnova Ekaterina Nikolaevna",
+      "lang_emploee_name_6": "Kozlova Svetlana Igorevna",
+      "lang_emploee_desc_1": "Director",
+      "lang_emploee_desc_2": "Deputy Director",
+      "lang_emploee_desc_3": "TV show producer",
+      "lang_emploee_desc_4": "Head of Sales and Marketing Department",
+      "lang_emploee_desc_5": "Director of Marketing and Advertising",
+      "lang_emploee_desc_6": "Videographer"
     }
   }

@@ -33,7 +33,6 @@ $(document).ready(function(){
       ]
     });
   
-  
     $('.block_news-body_slick').slick({
       slidesToShow: 1,
       slidesToScroll: 1

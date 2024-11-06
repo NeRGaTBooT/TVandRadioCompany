@@ -47,7 +47,6 @@ for (let element of audios) {
     });
 }
 
-
 // Бургер-меню
 const burger = document.getElementById('burger');
 const navMain = document.querySelector('.nav_main');
@@ -61,7 +60,7 @@ burger.addEventListener('click', () => {
         }, 300); // Длительность анимации
         burgerIcon.src = 'img/ico/menu.svg'; // Путь к изображению меню
     } else {
-        navMain.style.display = 'block'; // Установка display: block при открытии
+        navMain.style.display = 'flex'; // Установка display: block при открытии
         setTimeout(() => {
             navMain.classList.add('active'); // Добавление класса active после отображения
         }, 10); // Небольшая задержка для корректной анимации
@@ -214,11 +213,7 @@ document.addEventListener('click', function(event) {
     }
 });
 
-
-
-
 // смена темы
-
 // Устанавливаем начальную тему при загрузке страницы
 document.addEventListener('DOMContentLoaded', function() {
     const savedTheme = localStorage.getItem('theme') || 'light-theme'; // По умолчанию светлая тема
@@ -239,11 +234,7 @@ document.getElementById('themeToggle').addEventListener('click', function() {
     }
 });
 
-
-
-
 // смена языка
-
 // Функция для установки языка
 function setLanguage(langData) {
     localStorage.setItem('lang', JSON.stringify(langData));

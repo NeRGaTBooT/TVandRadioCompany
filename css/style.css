@@ -28,13 +28,6 @@
 }
 
 :root {
-    /* --color-background-main: #474b4e; 
-    --color-background-light: #fff; 
-    --color-accent: #e08a4d; 
-    --color-text-hover: #f18232;
-    --color-text-dark: #000000; 
-    --color-text-light: #ffffff; 
-    --color-background-darktheme: #313131; */
     --color-background-main: #3a3b3c; 
     --color-background-main-light: #515254; 
     --color-background-light: #fff; 
@@ -55,6 +48,11 @@ body.light-theme .section_marquee,
 body.light-theme .section_broadcast,
 body.light-theme .footer{
     background-color: var(--color-background-main-light);
+}
+
+body.light-theme .section_emploee_title,
+body.light-theme .emploee_items_body{
+    color: var(--color-text-dark);
 }
 
 body.dark-theme {
@@ -108,7 +106,6 @@ body.dark-theme .tab1_vak_link a:hover
     color: var(--color-text-hover);
 }
 
-
 img{
     max-width: 100%;
     height: auto;
@@ -141,14 +138,12 @@ table tr{
 
 table tr:hover {
     background-color: var(--color-text-hover);
-
 }
 
 body{
     font-family: 'OpenSansRegular', sans-serif;
     font-size: 14px;
     color: var(--color-text-light);
-
 }
 
 audio {
@@ -263,6 +258,10 @@ audio {
     color: var(--color-text-hover);
 }
 
+.sidebar_menu{
+    display: none;
+}
+
 .advans_menu li{
     list-style: none;
 }
@@ -327,14 +326,6 @@ audio {
 .result-item:hover {
     background-color: #f0f0f0; /* Подсветка при наведении */
 }
-
-
-
-
-
-
-
-
 
 .advans_menu img{
     width: 18px;
@@ -947,6 +938,35 @@ audio {
     color: var(--color-text-hover);
 }
 
+.footer .sidebar_menu_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-top: 1px solid var(--color-accent);
+}
+
+.footer .sidebar_menu_footer ul{
+    list-style: none;
+    text-align: start;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer .sidebar_menu_footer ul li:first-child{
+    color: var(--color-accent);
+    font-size: 20px;
+}
+.footer .sidebar_menu_footer ul li a{
+    color: var(--color-text-light);
+    transition: all ease .3s;
+}
+
+.footer .sidebar_menu_footer ul li a:hover{
+    color: var(--color-text-hover);
+}
+
 /* =============================================================================== */
 /* ABOUT.HTML */
 /* =============================================================================== */
@@ -1049,7 +1069,6 @@ audio {
     height: 50px;
     padding: 0 20px;
     border: 1px solid var(--color-accent);
-
 }
 
 .input_wrap{
@@ -1199,4 +1218,43 @@ audio {
     text-transform: uppercase;
     border-radius: 6px;
     transition: all ease .3s;
+}
+
+/* =============================================================================== */
+/* EMPLOEE.HTML */
+/* =============================================================================== */
+
+.emploee_block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section_emploee_title{
+    font-size: 30px;
+}
+
+.emploee_items{
+    flex: 1 1 300px;
+    border: 1px solid var(--color-accent);
+    padding: 10px;
+}
+.emploee_items_img {
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.emploee_items_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Масштабировать изображение, чтобы оно заполняло контейнер */
+}
+.emploee_items_body{
+    text-align: center;
+    font-size: 18px;
+}
+
+.emploee_items_name{
+    font-weight: bold;
+    margin-bottom: 10px;
 }
