@@ -917,32 +917,12 @@ audio {
     background-color: var(--color-background-main);
     color: var(--color-text-light);
     padding: 50px 0;
-    text-align: center;
-}
-
-.nav_main_footer ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    gap: 20px;
-    padding: 0;
-}
-
-.nav_main_footer ul li a{
-    color: var(--color-text-light);
-    transition: all ease .3s;
-}
-
-.nav_main_footer ul li a:hover{
-    color: var(--color-text-hover);
 }
 
 .footer .sidebar_menu_footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    border-top: 1px solid var(--color-accent);
 }
 
 .footer .sidebar_menu_footer ul{
