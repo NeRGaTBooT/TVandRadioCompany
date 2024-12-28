@@ -103,7 +103,7 @@
 
 @media only screen and (max-width: 600px) {
     table td, table th {
-        padding: 4px;
+        padding: 10px;
     }
 }
 

@@ -46,6 +46,78 @@ for (let element of audios) {
         audio.currentTime = seekBar.value;
     });
 }
+// ===============================================================================
+const audios_radio = document.getElementsByClassName('custom-audio-radio');
+let currentAudio = null;
+
+for (let element of audios_radio) {
+    let audio_radio = element.querySelector('audio');
+    let play_radio = element.querySelector('#play_radio');
+    let pause_radio = element.querySelector('#pause_radio');
+
+    play_radio.addEventListener('click', () => {
+        if (currentAudio && currentAudio !== audio_radio) {
+            currentAudio.pause();
+            let currentPlayBtn = currentAudio.parentElement.querySelector('#play_radio');
+            let currentPauseBtn = currentAudio.parentElement.querySelector('#pause_radio');
+            currentPauseBtn.classList.add('hide');
+            currentPlayBtn.classList.remove('hide');
+            currentAudio.currentTime = 0; // Сброс времени воспроизведения
+        }
+
+        pause_radio.classList.remove('hide');
+        play_radio.classList.add('hide');
+        
+        if (audio_radio.paused) {
+            const playPromise = audio_radio.play();
+            if (playPromise !== undefined) {
+                playPromise.then(_ => {
+                    // Воспроизведение успешно начато
+                }).catch(error => {
+                    console.error('Ошибка воспроизведения аудио:', error);
+                });
+            }
+        }
+        
+        currentAudio = audio_radio;
+    });
+
+    pause_radio.addEventListener('click', () => {
+        pause_radio.classList.add('hide');
+        play_radio.classList.remove('hide');
+        audio_radio.pause();
+        currentAudio = null; // Сброс текущего аудио
+    });
+}
+
+
+// const audios_radio = document.getElementsByClassName('custom-audio-radio');
+
+// for (let element of audios_radio) {
+//     let audio_radio = element.querySelector('audio');
+//     let play_radio = element.querySelector('#play_radio');
+//     let pause_radio = element.querySelector('#pause_radio');
+
+
+//     play_radio.addEventListener('click', () => {
+//         let playing_radio = document.querySelector('.custom-audio-radio > .audio-btn.pause:not(.hide)');
+//         if (playing_radio) {
+//             playing_radio.classList.add('hide');
+//             let play_radio = playing_radio.parentElement.querySelector('#play_radio');
+//             play_radio.classList.remove('hide');
+//         }
+
+//         pause_radio.classList.remove('hide');
+//         play_radio.classList.add('hide');
+//         audio_radio.play();
+//     });
+
+//     pause_radio.addEventListener('click', () => {
+//         pause_radio.classList.add('hide');
+//         play_radio.classList.remove('hide');
+//         audio_radio.pause();
+//     });
+// }
 
 // Бургер-меню
 const burger = document.getElementById('burger');
