@@ -56,6 +56,12 @@
     }
 }
 
+@media (max-width: 1024px){
+    .sidebar_menu_footer ul {
+        flex: 4 0 230px;
+    }
+}
+
 @media (max-width: 768px){
     .logo span{
         display: none;
@@ -105,9 +111,14 @@
     table td, table th {
         padding: 10px;
     }
+
+    
 }
 
 @media (max-width: 425px){
+    .sidebar_menu_footer ul {
+        flex: 0;
+    }
     .section_title, .section_emploee_title{
         font-size: 20px;
     }
