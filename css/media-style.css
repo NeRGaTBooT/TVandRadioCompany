@@ -80,12 +80,23 @@
         font-size: 25px;
     }
     .main_block{
-        flex-direction: column-reverse;
+        /* flex-direction: column-reverse; */
     }
 
     .video-container iframe{
         position: static;
     }
+
+    .block_news_podcast{
+        flex: 1;
+    }
+
+    .section_news_wrapper_block{
+        display: block;
+    }
+
+    
+    
 
     .video-container{
         position: static;

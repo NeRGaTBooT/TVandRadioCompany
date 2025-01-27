@@ -27,16 +27,17 @@
       "lang_news_block_items_1": "Привалов встретился с трудовым коллективом «Белоруснефти»",
       "lang_news_block_items_2": "Молчание = европейская дипломатия. В Речице состоялось судебное заседание по делу активистки радикально-экстремистского и националистического толка Полины Шарендо-Панасюк",
 
-      "lang_list_key_inf_items_1": "Ключевые темы",
-      "lang_list_key_inf_items_2": "Президент",
-      "lang_list_key_inf_items_3": "80 лет освобождения Беларуси",
-      "lang_list_key_inf_items_4": "Год качества",
-      "lang_list_key_inf_items_5": "Всебелорусское народное собрание 2024",
+
 
       "lang_title_items_1": "Главное",
       "lang_main_title_items_block": "7 ноября музею Гомельского дворцово-паркового ансамбля исполняется 105 лет",
       "lang_main_desc_items_block": "Свою годовщину музей отмечает серией мероприятий",
       "lang_items_link_1": "Читать",
+
+      "lang_news_slick_desc_1": "Уличный стиль — это не просто мода, это культура улиц, выражение свободы и индивидуальности через одежду. Кепки, кроссовки, футболки с логотипами — все это элементы уличного стиля, который стал главным трендом сезона. Отразите свою уникальность и стиль через уличную моду!",
+      "lang_news_slick_desc_2": "Новый ресторан приглашает гурманов отведать удивительные блюда и насладиться кулинарными новинками. Погрузитесь в мир изысканного вкуса и уютной атмосферы!",
+      "lang_news_slick_desc_3": "Команда нашей страны смело шагает к финалу чемпионата мира, демонстрируя выдающиеся спортивные достижения. Поддержим наших спортсменов на пути к победе!",
+      
 
       "lang_slider_items_1": "Глобальное потепление: учёные бьют тревогу<",
       "lang_slider_items_2": "Крупная сделка: компания X поглощает компанию Y",
@@ -327,8 +328,10 @@
       "lang_emploee_desc_3": "Продюсер телешоу",
       "lang_emploee_desc_4": "Заведующая отделом продаж и маркетинга",
       "lang_emploee_desc_5": "Директор по маркетингу и рекламе",
-      "lang_emploee_desc_6": "Оператор видеосъемки"
+      "lang_emploee_desc_6": "Оператор видеосъемки",
 
+      "footer_lic": "*При любом использовании материалов активная гиперссылка на tvrgomel.by обязательна. Пользуясь сайтом, вы соглашаетесь с условиями политики конфиденциальности.",
+      "form_btn_send": "Отправить"
     },
     "eng": {
       "lang_nav_main_items_news": "News",
@@ -356,11 +359,10 @@
       "lang_news_block_items_1": "Privalov met with the workforce of «Belorusneft»",
       "lang_news_block_items_2": "Silence = European diplomacy. A court hearing was held in Rechitsa in the case of radical extremist and nationalist activist Polina Sharendo-Panasyuk",
 
-      "lang_list_key_inf_items_1": "Key topics",
-      "lang_list_key_inf_items_2": "President",
-      "lang_list_key_inf_items_3": "80 years of liberation of Belarus",
-      "lang_list_key_inf_items_4": "Year of quality",
-      "lang_list_key_inf_items_5": "All-Belarusian People's Assembly 2024",
+      "lang_news_slick_desc_1": "Street style is not just a fashion, it is a culture of streets, an expression of freedom and individuality through clothes. Caps, sneakers, T -shirts with logos - all these are elements of street style, which became the main trend of the season. Reflect your uniqueness and style through street fashion!",
+      "lang_news_slick_desc_2": "The new restaurant invites gourmons to taste amazing dishes and enjoy culinary innovations. Immerse yourself in the world of exquisite taste and a cozy atmosphere!",
+      "lang_news_slick_desc_3": "Our country's team is boldly marching towards the World Cup finals, demonstrating outstanding sporting achievements. Let's support our athletes on the path to victory!",
+
 
       "lang_title_items_1": "Main",
       "lang_main_title_items_block": "On November 7, the Museum of the Gomel Palace and Park Ensemble turns 105 years old",
@@ -653,6 +655,8 @@
       "lang_emploee_desc_3": "TV show producer",
       "lang_emploee_desc_4": "Head of Sales and Marketing Department",
       "lang_emploee_desc_5": "Director of Marketing and Advertising",
-      "lang_emploee_desc_6": "Videographer"
+      "lang_emploee_desc_6": "Videographer",
+      "footer_lic": "*With any use of materials, active hyperlink on tvrgomel.by is required. Using the site, you agree with the conditions of confidentiality policy.",
+      "form_btn_send": "Send"
     }
   }

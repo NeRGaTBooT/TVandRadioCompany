@@ -10,12 +10,12 @@
     <!-- Подключение стилей для работы Slick Slider (библиотека слайдеров) -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
     <!-- Подключение основным стилей для сайта -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Подключение стилей Media-запросов(для отображения на разных экранах) -->
     <link rel="stylesheet" href="css/media-style.css">
     <!-- Скрипты для работы Slick Slider -->
-    <!--     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </head>
@@ -50,7 +50,7 @@
                             <label for="check" data-key="lang_vak_form_check">Я принимаю условия пользовательского соглашения</label>
                         </div>
                         
-                        <input class="form_btn" data-key="lang_modal_input_btn" type="submit" value="Отправить">
+                        <input class="form_btn" data-key="form_btn_send" data-key="lang_modal_input_btn" type="submit" value="Отправить">
                     </form>
                 </div>
             </div>
@@ -135,7 +135,7 @@
         </section>
         
         <!-- Секция Ключевые темы -->
-        <section class="section_key_inf">
+        <!-- <section class="section_key_inf">
             <div class="container">
                 <ul class="list_key_inf">
                     <li data-key="lang_list_key_inf_items_1">Ключевые темы:</li>
@@ -145,23 +145,24 @@
                     <li><a href="news_block.html" data-key="lang_list_key_inf_items_5">Всебелорусское народное собрание 2024</a></li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- Секция Главная -->
         <section class="section_main">
             <div class="container">
                 <p class="main_title" data-key="lang_title_items_1">Главное</p>
                 <div class="main_block">
-                    <div class="main_block_desc">
-                        <h1><a href="news_block.html" data-key="lang_main_title_items_block">7 ноября музею Гомельского дворцово-паркового ансамбля исполняется 105 лет</a></h1>
-                        <p data-key="lang_main_desc_items_block">Свою годовщину музей отмечает серией мероприятий</p>
-                        <a href="news_block.html" class="main_btn" data-key="lang_items_link_1">Читать</a>
-                    </div>
                     <div class="main_block_video">
                         <div class="video-container">
                             <iframe src="https://www.youtube.com/embed/LY0cLck_iAM" title="7 ноября музею Гомельского дворцово-паркового ансамбля исполняется 105 лет" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
+                    <div class="main_block_desc">
+                        <h1><a href="news_block.html" data-key="lang_main_title_items_block">7 ноября музею Гомельского дворцово-паркового ансамбля<br>исполняется 105 лет</a></h1>
+                        <p data-key="lang_main_desc_items_block">"В этот прекрасный ноябрьский день музей Гомельского дворцово-паркового ансамбля отмечает свое почтенное 105-летие, бережно храня историю и красоту для будущих поколений."</p>
+                        <a href="news_block.html" class="main_btn" data-key="lang_items_link_1">Читать</a>
+                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -199,11 +200,11 @@
         </section>
 
         <!-- Секция с типо рекламой -->
-        <div class="section_add">
+        <!-- <div class="section_add">
             <div class="container">
                 <img src="img/add.jpg" alt="add">
             </div>
-        </div>
+        </div> -->
 
         <!-- Секция с разными блоками новостей -->
         <section class="section_block_news">
@@ -267,6 +268,9 @@
                                     <a href="news_block.html"><img src="img/news_world/news_world_1.jpg" alt="s1"></a>
                                     <div class="slick_descr">
                                         <a class="slick-link" href="news_block.html" data-key="lang_news_slick_1">Мода: Уличный стиль становится главным трендом сезона</a>
+                                        <div class="slick_desc_item">
+                                            <p data-key="lang_news_slick_desc_1">Уличный стиль — это не просто мода, это культура улиц, выражение свободы и индивидуальности через одежду. Кепки, кроссовки, футболки с логотипами — все это элементы уличного стиля, который стал главным трендом сезона. Отразите свою уникальность и стиль через уличную моду!</p>
+                                        </div>
                                         <div class="slick-data" data-key="lang_news_slick_data_1">16:10 | 15 июня | 2024</div>
                                     </div>
                                 </div>
@@ -274,6 +278,9 @@
                                     <a href="news_block.html"><img src="img/news_world/news_world_2.jpg" alt="s1"></a>
                                     <div class="slick_descr">
                                         <a class="slick-link" href="news_block.html" data-key="lang_news_slick_2">Кулинарные новинки: Ресторан открыл двери для гурманов</a>
+                                        <div class="slick_desc_item">
+                                            <p data-key="lang_news_slick_desc_2">Новый ресторан приглашает гурманов отведать удивительные блюда и насладиться кулинарными новинками. Погрузитесь в мир изысканного вкуса и уютной атмосферы!</p>
+                                        </div>
                                         <div class="slick-data" data-key="lang_news_slick_data_2">19:20 | 30 июля | 2024</div>
                                     </div>
                                 </div>
@@ -281,13 +288,17 @@
                                     <a href="news_block.html"><img src="img/news_world/news_world_3.jpg" alt="s1"></a>
                                     <div class="slick_descr">
                                         <a class="slick-link" href="news_block.html" data-key="lang_news_slick_3">Спорт: Команда страны вышла в финал чемпионата мира</a>
+                                        <div class="slick_desc_item">
+                                            <p data-key="lang_news_slick_desc_3">Команда нашей страны смело шагает к финалу чемпионата мира, демонстрируя выдающиеся спортивные достижения. Поддержим наших спортсменов на пути к победе!</p>
+                                        </div>
                                         <div class="slick-data" data-key="lang_news_slick_data_3">11:05 | 22 августа | 2024</div>
                                     </div>
                                 </div>
                         </div>
                     </div>
 
-                    <!-- Блок Наши подкасты -->
+                    <div class="section_news_wrapper_block">
+                        <!-- Блок Наши подкасты -->
                     <div class="block_news_podcast">
                         <div class="block_news-header">
                             <div class="block_last_news-title" data-key="lang_title_items_4">Наши подкасты</div>
@@ -597,16 +608,17 @@
                             </div>
                         </div>
                     </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Секция с типо рекламой -->
-        <div class="section_add">
+        <!-- <div class="section_add">
             <div class="container">
                 <img src="img/add2.jpg" alt="add">
             </div>
-        </div>
+        </div> -->
 
         <!-- Секция с прямыми трансляциями -->
         <section class="section_broadcast">
@@ -695,35 +707,6 @@
         <!-- Секция Подвал -->
         <footer class="footer">
             <div class="container">
-                <!-- <div class="sidebar_menu_footer">
-                    <ul>
-                        <li>Меню</li>
-                        <li><a href="index.html" data-key="lang_nav_main_items_news">Новости</a></li>
-                        <li><a href="ad.html" data-key="lang_nav_main_items_ad">Реклама</a></li>
-                        <li><a href="radio.html" data-key="lang_nav_main_items_radio">Радио</a></li>
-                        <li><a href="about.html" data-key="lang_nav_main_items_about">О компании</a></li>
-                    </ul>
-                    <ul>
-                        <li data-key="lang_sidebar_menu_title_1">Телевидение</li>
-                        <li><a href="https://www.tvgrodno.by/" target="_blank" data-key="lang_sidebar_menu_items_1">ТРК Гродно</a></li>
-                        <li><a href="https://www.tvrmogilev.by/ru" target="_blank" data-key="lang_sidebar_menu_items_2">ТРК Могилев</a></li>
-                        <li><a href="https://trkbrest.by/" target="_blank" data-key="lang_sidebar_menu_items_3">ТРК Брест</a></li>
-                        <li><a href="https://vtv.by/" target="_blank" data-key="lang_sidebar_menu_items_11">ТРК Витебск</a></li>
-                    </ul>
-                    <ul>
-                        <li data-key="lang_sidebar_menu_title_2">Радио</li>
-                        <li><a href="https://radiogomelfm.by/" target="_blank" data-key="lang_sidebar_menu_items_4">Гомель FM</a></li>
-                        <li><a href="https://radiobelarus.by/" target="_blank" data-key="lang_sidebar_menu_items_5">Радио Беларусь</a></li>
-                        <li><a href="https://nelly-info.by/" target="_blank" data-key="lang_sidebar_menu_items_6">Радио Нелли-инфо</a></li>
-                        <li><a href="https://radiomir.by/" target="_blank" data-key="lang_sidebar_menu_items_7">Радио МИР</a></li>
-                        <li><a href="https://www.radiusfm.by/" target="_blank" data-key="lang_sidebar_menu_items_8">Радиус FM</a></li>
-                    </ul>
-                    <ul>
-                        <li data-key="lang_sidebar_menu_title_3">Интернет</li>
-                        <li><a href="https://news.by/" target="_blank" data-key="lang_sidebar_menu_items_9">БЕЛТЕЛЕРАДИОКОМПАНИЯ</a></li>
-                        <li><a href="https://president.gov.by/ru" target="_blank" data-key="lang_sidebar_menu_items_10">Интернет-портал Президент</a></li>
-                    </ul>
-                </div> -->
 
                 <div class="sidebar_menu_footer">
                     <ul>
@@ -757,7 +740,7 @@
                         <li>Адреас компании</li>
                         <li>
                             <img src="img/ico/map-pin.svg" alt="map">
-                            <span>
+                            <span data-key="lang_sidebar_map">
                                 ул. Пушкина, 8, г.Гомель,<br>246050, Республика Беларусь.
                             </span>
                         </li>
@@ -768,7 +751,7 @@
                             <img src="img/ico/phone.svg" alt="phone">
                             <span>
                                 (0232) 34-26-78,<br>
-                                (0232) 34-27-68 (факс)
+                                (0232) 34-27-68
                             </span>
                         </li>
                         <li><span><img src="img/ico/mail.svg" alt=""></span><a href="mailto:sekretar@tvrgomel.by">sekretar@tvrgomel.by</a></li>
@@ -778,7 +761,7 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2432.5532737301733!2d31.009419489324927!3d52.432891612570046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YPQuy4g0J_Rg9GI0LrQuNC90LAsIDgsINCzLtCT0L7QvNC10LvRjCwgMjQ2MDUwLCDQoNC10YHQv9GD0LHQu9C40LrQsCDQkdC10LvQsNGA0YPRgdGMLg!5e0!3m2!1sru!2sby!4v1736688810537!5m2!1sru!2sby" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="lic">
-                    <p>*При любом использовании материалов активная гиперссылка на tvrgomel.by обязательна. Пользуясь сайтом, вы соглашаетесь с условиями политики конфиденциальности.</p>
+                    <p data-key="footer_lic">*При любом использовании материалов активная гиперссылка на tvrgomel.by обязательна. Пользуясь сайтом, вы соглашаетесь с условиями политики конфиденциальности.</p>
                 </div>
             </div>
 
