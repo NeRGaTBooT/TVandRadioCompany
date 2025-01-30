@@ -403,9 +403,38 @@ audio {
 }
 
 /* Стили Главной секции */
-.section_main{
-    background-color: var(--color-background-main);
+.section_main {
+
 }
+
+.section_main {
+    position: relative;
+    padding: 20px;
+    margin: 0;
+    background-image: url('../img/main_block_1_1.jpg');
+    background-size: cover;
+    transition: background-image 0.5s ease;
+}
+
+.main_link_card_news {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.main_items_link_img img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.main_items_link_img img {
+    width: 100%;
+    height: auto;
+}
+
+
+
 
 .main_title, .section_current_title {
     font-family: 'OpenSansSemiBold', sans-serif;;

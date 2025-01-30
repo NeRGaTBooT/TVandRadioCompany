@@ -90,35 +90,6 @@ for (let element of audios_radio) {
     });
 }
 
-
-// const audios_radio = document.getElementsByClassName('custom-audio-radio');
-
-// for (let element of audios_radio) {
-//     let audio_radio = element.querySelector('audio');
-//     let play_radio = element.querySelector('#play_radio');
-//     let pause_radio = element.querySelector('#pause_radio');
-
-
-//     play_radio.addEventListener('click', () => {
-//         let playing_radio = document.querySelector('.custom-audio-radio > .audio-btn.pause:not(.hide)');
-//         if (playing_radio) {
-//             playing_radio.classList.add('hide');
-//             let play_radio = playing_radio.parentElement.querySelector('#play_radio');
-//             play_radio.classList.remove('hide');
-//         }
-
-//         pause_radio.classList.remove('hide');
-//         play_radio.classList.add('hide');
-//         audio_radio.play();
-//     });
-
-//     pause_radio.addEventListener('click', () => {
-//         pause_radio.classList.add('hide');
-//         play_radio.classList.remove('hide');
-//         audio_radio.pause();
-//     });
-// }
-
 // Бургер-меню
 const burger = document.getElementById('burger');
 const navMain = document.querySelector('.nav_main');
@@ -367,3 +338,18 @@ if (selectedLang) {
 if (selectedLang) {
     document.getElementById('langSelect').value = selectedLang;
 }
+
+
+
+const sectionMain = document.querySelector('.section_main');
+    let timeout;
+
+    document.querySelectorAll('.main_link_card_news').forEach(item => {
+        item.addEventListener('mouseover', function() {
+            const imageUrl = this.getAttribute('data-bg');
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                sectionMain.style.backgroundImage = `url(${imageUrl})`;
+            }, 150); // Задержка в миллисекундах перед сменой фоновой картинки
+        });
+    });
